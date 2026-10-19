@@ -1,0 +1,35 @@
+{
+  "platform": "Linux-7.0.14-orbstack-00380-ga7e0a2dc9535-aarch64-with-glibc2.36",
+  "python": "3.12.14 (main, Sep 19 2026, 01:11:39) [GCC 12.2.0]",
+  "kind": "unverified",
+  "limit_bytes": 99999744,
+  "swap_limit_bytes": 0,
+  "cgroup_peak_bytes": 82001920,
+  "events_delta": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0,
+    "sock_throttled": 0
+  },
+  "solution_sha256": "6b070527a160f3dcd9513eb194f1e5a41a5c69e55bfeb592dfab20df5192fae2",
+  "requirements_sha256": "60ed25b5fff7ce357dcfec23d683b4257a2179dd4d622e5c6e2aea50f8ba94b0",
+  "submission": {
+    "command": [
+      "/usr/local/bin/python",
+      "/work/solution.py",
+      "--submission_file=/work/reports/official-100mb/submission.csv",
+      "--index_dir=/work/reports/official/index",
+      "/data"
+    ],
+    "seconds": 4.3101,
+    "peak_rss_bytes": 51154944,
+    "peak_rss_mib": 48.785,
+    "returncode": 0,
+    "log": "submission.log"
+  },
+  "submission_sha256": "02e26b70d50c243b46d56bc899f4b3f8062cb6d41aa81470ae6df635bcb60968",
+  "passed": true
+}

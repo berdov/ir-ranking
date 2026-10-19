@@ -1,0 +1,16 @@
+{
+  "platform": "macOS arm64",
+  "python": "3.12.3",
+  "method": "/usr/bin/time -l, fresh process, total wall time including imports",
+  "seconds": 279.59,
+  "peak_rss_bytes": 791887872,
+  "peak_rss_mib": 755.203125,
+  "within_30_minutes": true,
+  "within_8gb": true,
+  "source_sha256": {
+    "solution.py": "7b948471a2e7cd64710f7d63884320e236b42c241f42284673d3e269d420511a",
+    "ranking.py": "d9eb0bcbaec300690cc37b9b1637ddf51fe001613d535905e186270835e8a11d",
+    "requirements.txt": "48047ac54d45ce19be85f66fcfeddd59fef0d6232801fde0d680729ff5dbce8c"
+  },
+  "submission_sha256": "9e6bc254b1c736c2995e5b3a6dc0d58fd6326bf03777dd71aef4684f37cbfc7a"
+}

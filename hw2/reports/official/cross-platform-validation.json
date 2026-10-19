@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "submission": "reports/official/submission.csv",
+  "objects": 50353,
+  "queries": 2000,
+  "finite_scores": true,
+  "object_ids_unique_complete_and_in_order": true,
+  "comparison": {
+    "file": "reports/official-linux/submission.csv",
+    "scores_exactly_equal": false,
+    "scores_close": true,
+    "relative_tolerance": 1e-12,
+    "absolute_tolerance": 1e-12,
+    "max_absolute_difference": 1.887379141862766e-15,
+    "rankings_equal": true,
+    "different_query_ids": [],
+    "tie_break": "ascending numeric ObjectId"
+  }
+}

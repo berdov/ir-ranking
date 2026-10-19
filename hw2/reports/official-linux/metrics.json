@@ -1,0 +1,108 @@
+{
+  "kind": "official",
+  "measured_at_utc": "2026-10-19T16:31:10.655671+00:00",
+  "platform": "Linux-7.2.9-orbstack-00391-g2b298d05fbd4-aarch64-with-glibc2.36",
+  "python": "3.12.15 (main, Oct  6 2026, 02:08:14) [GCC 12.2.0]",
+  "data_dir": "/data",
+  "time_limit_seconds": 1800.0,
+  "memory_limit_bytes": 8000000000,
+  "method": "Fresh solution child; wall time includes interpreter/imports; peak RSS from wait4",
+  "memory_enforcement": "Linux cgroup v2 hard cap, no swap; RSS also checked with wait4",
+  "passed": true,
+  "public_kaggle_score": null,
+  "source_sha256": {
+    "solution.py": "7b948471a2e7cd64710f7d63884320e236b42c241f42284673d3e269d420511a",
+    "ranking.py": "d9eb0bcbaec300690cc37b9b1637ddf51fe001613d535905e186270835e8a11d",
+    "requirements.txt": "48047ac54d45ce19be85f66fcfeddd59fef0d6232801fde0d680729ff5dbce8c",
+    "scripts/benchmark.py": "ea0a14df723ea58cb851ffee52a49853e6d71265fa4d9264330ff020686cf9eb"
+  },
+  "input_files": {
+    "vkmarco-docs.tsv": {
+      "bytes": 981304998,
+      "sha256": "138809a012104b64b6ea3d611e76532860b8818a18cd6ec607fb7cc3fddf9726"
+    },
+    "vkmarco-doctrain-queries.tsv": {
+      "bytes": 76878,
+      "sha256": "084bfaf7ea230c0db8d37851c97b2d1d689cf00f1427eb205568ca4f7be86678"
+    },
+    "vkmarco-doctrain-qrels.tsv": {
+      "bytes": 498718,
+      "sha256": "2bb01f5dcdd20144e9fb46c436dbcf345c6cbe38ba4ca3c3a3705c4251111c79"
+    },
+    "vkmarco-doceval-queries.tsv": {
+      "bytes": 143100,
+      "sha256": "5e77bc8f64eb16af989fdd1dc5c531e97bf6e8a050e9fc78f5bd1e945059e736"
+    },
+    "objects.csv": {
+      "bytes": 1140003,
+      "sha256": "a3e8b0c7dd1eb6400084167eb1d94513f930e82facd658d29627ff8dc08f5fbd"
+    },
+    "sample_submission.csv": {
+      "bytes": 788886,
+      "sha256": "5bbd643bc33a2ae80a821e5dbb154699667cfc75abc46662e39615d2d9be9f11"
+    }
+  },
+  "cgroup_before": {
+    "path": "/sys/fs/cgroup",
+    "memory.max": 8000000000,
+    "memory.swap.max": 0,
+    "memory.peak": 993845248,
+    "events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0,
+      "sock_throttled": 0
+    }
+  },
+  "submission": {
+    "command": [
+      "/usr/local/bin/python",
+      "/work/solution.py",
+      "--submission_file=/work/reports/official-linux/submission.csv",
+      "--report_file=/work/reports/official-linux/ranking.json",
+      "--normalization=lemma",
+      "--seed",
+      "42",
+      "/data"
+    ],
+    "seconds": 298.4527,
+    "peak_rss_bytes": 840949760,
+    "peak_rss_mib": 801.992,
+    "sampled_peak_rss_bytes": 841322496,
+    "returncode": 0,
+    "termination_reason": null,
+    "within_time_limit": true,
+    "within_memory_limit": true,
+    "log": "/work/reports/official-linux/submission.log",
+    "passed": true
+  },
+  "cgroup_after": {
+    "path": "/sys/fs/cgroup",
+    "memory.max": 8000000000,
+    "memory.swap.max": 0,
+    "memory.peak": 1304629248,
+    "events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0,
+      "sock_throttled": 0
+    }
+  },
+  "cgroup_events_delta": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0,
+    "sock_throttled": 0
+  },
+  "submission_sha256": "c4ae290502c15a234aed3bdc0e413d1b0667128429b3c9ec0bd52e75782b82ed",
+  "ranking_report": "/work/reports/official-linux/ranking.json"
+}

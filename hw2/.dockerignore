@@ -1,0 +1,11 @@
+.venv/
+reports/
+data/
+__pycache__/
+**/__pycache__/
+*.pyc
+**/*.pyc
+submission*.csv
+**/submission*.csv
+.git/
+.pytest_cache/

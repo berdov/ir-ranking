@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "submission": "reports/official/submission.csv",
+  "objects": 50353,
+  "queries": 2000,
+  "finite_scores": true,
+  "object_ids_unique_complete_and_in_order": true
+}

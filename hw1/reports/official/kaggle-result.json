@@ -1,0 +1,10 @@
+{
+  "competition": "boolean-retrieval-homework-vk-ir-hse-fall-2026",
+  "username": "whuliss",
+  "metric": "F1",
+  "score": 1.0,
+  "reported_date": "2026-09-27",
+  "evidence_source": "User reported the Kaggle result in the conversation; not independently fetched from Kaggle.",
+  "prepared_submission_sha256": "02e26b70d50c243b46d56bc899f4b3f8062cb6d41aa81470ae6df635bcb60968",
+  "course_platform_archive_uploaded": false
+}

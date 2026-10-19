@@ -1,0 +1,55 @@
+{
+  "valid": true,
+  "checked_at_utc": "2026-09-27T06:18:37.097553+00:00",
+  "method": "Direct per-document set containment over Title + Body; Python re \\w+ then per-token lowercase; no production imports or index",
+  "scope": "All provided pairs; independent local oracle, not a Kaggle score",
+  "files": {
+    "vkmarco-docs.tsv": {
+      "path": "/Users/berdov/ir-ranking/data/hw1/vkmarco-docs.tsv",
+      "bytes": 156744289,
+      "sha256": "5a3fc6862187778d5c3a5bbadec7164049ed338551ba815889c27a36a90b49f3"
+    },
+    "vkmarco-doceval-queries.tsv": {
+      "path": "/Users/berdov/ir-ranking/data/hw1/vkmarco-doceval-queries.tsv",
+      "bytes": 154042,
+      "sha256": "8e5b14f6b1211e41116f5e60e72e6d9c532d763cdfd4cb86967ce8795068edcb"
+    },
+    "objects.csv": {
+      "path": "/Users/berdov/ir-ranking/data/hw1/objects.csv",
+      "bytes": 1810105,
+      "sha256": "da6e62e8c1b5b43c9edfe7f02585defd86b2a7329cce7e409283d9691a6a5c0e"
+    },
+    "sample_submission.csv": {
+      "path": "/Users/berdov/ir-ranking/data/hw1/sample_submission.csv",
+      "bytes": 682693,
+      "sha256": "88c280f2e14fecf435b948feda6ebf130536877fc8689a8b7978353fb5774f29"
+    },
+    "submission": {
+      "path": "/Users/berdov/ir-ranking/i.berdov/hw1/reports/official/submission.csv",
+      "bytes": 682693,
+      "sha256": "02e26b70d50c243b46d56bc899f4b3f8062cb6d41aa81470ae6df635bcb60968"
+    }
+  },
+  "counts": {
+    "documents": 60000,
+    "queries": 3000,
+    "pairs": 86723,
+    "referenced_documents": 45090,
+    "sample_rows": 86723,
+    "submission_rows": 86723,
+    "expected_positives": 15130,
+    "submission_positives": 15130,
+    "expected_negatives": 71593
+  },
+  "checks": {
+    "row_count_matches": true,
+    "object_id_set_matches": true,
+    "object_id_order_matches_objects_csv": true,
+    "sample_object_id_set_matches_ignoring_order": true,
+    "duplicate_submission_ids": 0,
+    "invalid_labels": 0,
+    "object_id_order_errors": 0
+  },
+  "mismatches": 0,
+  "mismatch_examples": []
+}

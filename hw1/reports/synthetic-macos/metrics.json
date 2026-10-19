@@ -1,0 +1,49 @@
+{
+  "kind": "synthetic",
+  "measured_at_utc": "2026-09-24T20:20:57.995981+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.3 (v3.12.3:f6650f9ad7, Apr  9 2024, 08:18:47) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "data_dir": "/Users/berdov/ir-ranking/i.berdov/hw1/reports/synthetic-macos/data",
+  "method": "wait4 ru_maxrss per fresh child; wall time includes interpreter/imports",
+  "solution_sha256": "7745f819031b540b473b02b0d1a0ecb8452b07ad0d9707573f30feeabf65d92b",
+  "requirements_sha256": "60ed25b5fff7ce357dcfec23d683b4257a2179dd4d622e5c6e2aea50f8ba94b0",
+  "build": {
+    "command": [
+      "/Users/berdov/ir-ranking/i.berdov/.venv/bin/python",
+      "/Users/berdov/ir-ranking/i.berdov/hw1/solution.py",
+      "--build_index",
+      "--index_dir=/Users/berdov/ir-ranking/i.berdov/hw1/reports/synthetic-macos/index",
+      "/Users/berdov/ir-ranking/i.berdov/hw1/reports/synthetic-macos/data"
+    ],
+    "seconds": 4.6517,
+    "peak_rss_bytes": 198082560,
+    "peak_rss_mib": 188.906,
+    "returncode": 0,
+    "log": "build.log"
+  },
+  "submission": {
+    "command": [
+      "/Users/berdov/ir-ranking/i.berdov/.venv/bin/python",
+      "/Users/berdov/ir-ranking/i.berdov/hw1/solution.py",
+      "--submission_file=/Users/berdov/ir-ranking/i.berdov/hw1/reports/synthetic-macos/submission.csv",
+      "--index_dir=/Users/berdov/ir-ranking/i.berdov/hw1/reports/synthetic-macos/index",
+      "/Users/berdov/ir-ranking/i.berdov/hw1/reports/synthetic-macos/data"
+    ],
+    "seconds": 40.2191,
+    "peak_rss_bytes": 68141056,
+    "peak_rss_mib": 64.984,
+    "returncode": 0,
+    "log": "submission.log"
+  },
+  "index_bytes": 22683648,
+  "index_mib": 21.633,
+  "index_metadata": {
+    "document_count": "60000",
+    "format_version": "1",
+    "posting_count": "5330000",
+    "term_count": "400207"
+  },
+  "submission_sha256": "ff7dea61f35d2f857645a00c43da03c30c66b8c0ef4030d037835016fb2d85da",
+  "matches_expected": true,
+  "submission_rss_below_100_mb": true
+}

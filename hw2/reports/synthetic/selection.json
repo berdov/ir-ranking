@@ -1,0 +1,1175 @@
+{
+  "metric": "nDCG@10, gain=2**relevance-1, mean over queries, IDCG=0 gives 0",
+  "train_ties": "lexicographic DocumentId; training qrels have no ObjectId",
+  "test_ties": "Kaggle uses ascending ObjectId for equal Score; CSV scores are unmodified",
+  "selection_policy": "Only tune queries select all parameters; holdout is report-only",
+  "seed": 42,
+  "holdout_fraction": 0.3,
+  "train_queries": 24,
+  "tune_queries": 17,
+  "holdout_queries": 7,
+  "train_pairs": 96,
+  "tune_pairs": 68,
+  "holdout_pairs": 28,
+  "splits": {
+    "tune_query_ids": [
+      "train:100",
+      "train:137",
+      "train:174",
+      "train:211",
+      "train:248",
+      "train:285",
+      "train:322",
+      "train:396",
+      "train:470",
+      "train:507",
+      "train:544",
+      "train:581",
+      "train:618",
+      "train:840",
+      "train:877",
+      "train:914",
+      "train:951"
+    ],
+    "holdout_query_ids": [
+      "train:359",
+      "train:433",
+      "train:655",
+      "train:692",
+      "train:729",
+      "train:766",
+      "train:803"
+    ]
+  },
+  "selected": {
+    "model": "bm25",
+    "k1": 0.6,
+    "b": 0.3
+  },
+  "per_family": {
+    "tfidf": {
+      "config": {
+        "model": "tfidf"
+      },
+      "tune_ndcg": 0.9815092076330515,
+      "holdout_ndcg": 1.0,
+      "train_ndcg": 0.9869023554067448
+    },
+    "bm25": {
+      "config": {
+        "model": "bm25",
+        "k1": 0.6,
+        "b": 0.3
+      },
+      "tune_ndcg": 1.0,
+      "holdout_ndcg": 1.0,
+      "train_ndcg": 1.0
+    },
+    "bm25f": {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0,
+      "holdout_ndcg": 1.0,
+      "train_ndcg": 1.0
+    },
+    "lm": {
+      "config": {
+        "model": "lm",
+        "mu": 200.0
+      },
+      "tune_ndcg": 0.9907546038165256,
+      "holdout_ndcg": 0.9775468949829911,
+      "train_ndcg": 0.9869023554067448
+    },
+    "blend": {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0,
+      "holdout_ndcg": 1.0,
+      "train_ndcg": 1.0
+    }
+  },
+  "selected_metrics": {
+    "tune_ndcg": 1.0,
+    "holdout_ndcg": 1.0,
+    "train_ndcg": 1.0
+  },
+  "selected_vs_baseline_holdout_bootstrap": {
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "resamples": 500,
+    "seed": 43,
+    "better_queries": 0,
+    "worse_queries": 0,
+    "tied_queries": 7
+  },
+  "evaluated_configurations": 86,
+  "candidates": [
+    {
+      "config": {
+        "model": "tfidf"
+      },
+      "tune_ndcg": 0.9815092076330515
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 0.6,
+        "b": 0.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 0.6,
+        "b": 0.3
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 0.6,
+        "b": 0.6
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 0.6,
+        "b": 0.9
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 1.2,
+        "b": 0.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 1.2,
+        "b": 0.3
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 1.2,
+        "b": 0.6
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 1.2,
+        "b": 0.9
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 2.0,
+        "b": 0.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 2.0,
+        "b": 0.3
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 2.0,
+        "b": 0.6
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25",
+        "k1": 2.0,
+        "b": 0.9
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.963018415266103
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.963018415266103
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.963018415266103
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.963018415266103
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.988520502275913
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9950802152611056
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9770410045518259
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9836007175370185
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 1.2,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9721212198129313
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.963018415266103
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9770410045518259
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.963018415266103
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9770410045518259
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.3,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9721212198129313
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9950802152611056
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9770410045518259
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.6,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9721212198129313
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 1.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9836007175370185
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 4.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9721212198129313
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 2.0,
+        "b_body": 0.9,
+        "b_title": 0.3,
+        "w_title": 8.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 0.9721212198129313
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.0,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.6,
+        "w_title": 2.0,
+        "w_url": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.0,
+        "b_url": 0.3
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.25,
+        "b_url": 0.3
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "bm25f",
+        "k1": 0.6,
+        "b_body": 0.0,
+        "b_title": 0.3,
+        "w_title": 2.0,
+        "w_url": 0.5,
+        "b_url": 0.3
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "lm",
+        "mu": 200.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "lm",
+        "mu": 1000.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "lm",
+        "mu": 3000.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "lm",
+        "mu": 10000.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.1,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.25,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.5,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 0.9907546038165256
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.05,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.1,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.2,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.05,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.1,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.2,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.0
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.02
+      },
+      "tune_ndcg": 1.0
+    },
+    {
+      "config": {
+        "model": "blend",
+        "base": {
+          "model": "bm25f",
+          "k1": 0.6,
+          "b_body": 0.0,
+          "b_title": 0.3,
+          "w_title": 2.0,
+          "w_url": 0.0
+        },
+        "lm_mu": 200.0,
+        "lm_weight": 0.0,
+        "phrase_weight": 0.0,
+        "coverage_weight": 0.0,
+        "proximity_weight": 0.05
+      },
+      "tune_ndcg": 1.0
+    }
+  ],
+  "data": {
+    "documents": 122,
+    "train_queries": 24,
+    "test_queries": 6,
+    "train_pairs": 96,
+    "test_pairs": 24,
+    "normalization": "lemma",
+    "raw_vocabulary_size": 45,
+    "query_vocabulary_size": 13,
+    "field_token_totals": {
+      "title": 148,
+      "body": 343,
+      "url": 400
+    },
+    "feature_seconds": 0.082,
+    "tfidf_baseline": "raw tf, smoothed idf, exact full-document L2 cosine, default 2+ word token pattern"
+  },
+  "normalization": "lemma",
+  "config": {
+    "model": "bm25",
+    "k1": 0.6,
+    "b": 0.3
+  },
+  "seconds": 0.113,
+  "source_sha256": {
+    "solution.py": "7b948471a2e7cd64710f7d63884320e236b42c241f42284673d3e269d420511a",
+    "ranking.py": "d9eb0bcbaec300690cc37b9b1637ddf51fe001613d535905e186270835e8a11d",
+    "requirements.txt": "48047ac54d45ce19be85f66fcfeddd59fef0d6232801fde0d680729ff5dbce8c"
+  },
+  "submission_sha256": "df0c8d5204d6a981c03962183f6359e8ea1ef7c977152d11aa45d99d86aeb3b1",
+  "public_kaggle_score": null
+}

@@ -1,0 +1,24 @@
+{
+  "origin": "Kaggle competition archive supplied by the user",
+  "archive_name": "boolean-retrieval-homework-vk-ir-hse-fall-2026.zip",
+  "archive_sha256": "31d1510705a1d29e36d5009b16939ae5b866de59e1d37eb99e729a9a7d1745e7",
+  "recorded_at_utc": "2026-09-27T06:18:08.607171+00:00",
+  "files": {
+    "vkmarco-docs.tsv": {
+      "bytes": 156744289,
+      "sha256": "5a3fc6862187778d5c3a5bbadec7164049ed338551ba815889c27a36a90b49f3"
+    },
+    "vkmarco-doceval-queries.tsv": {
+      "bytes": 154042,
+      "sha256": "8e5b14f6b1211e41116f5e60e72e6d9c532d763cdfd4cb86967ce8795068edcb"
+    },
+    "objects.csv": {
+      "bytes": 1810105,
+      "sha256": "da6e62e8c1b5b43c9edfe7f02585defd86b2a7329cce7e409283d9691a6a5c0e"
+    },
+    "sample_submission.csv": {
+      "bytes": 682693,
+      "sha256": "88c280f2e14fecf435b948feda6ebf130536877fc8689a8b7978353fb5774f29"
+    }
+  }
+}

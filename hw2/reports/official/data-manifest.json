@@ -1,0 +1,30 @@
+{
+  "source": "https://www.kaggle.com/competitions/text-ranking-homework-vk-ir-hse-fall-2026/data",
+  "archive_sha256": "08a95fa99bc85c1b59e7d8de9870ded4a359c08b5311fa2f68179ac40412a627",
+  "files": {
+    "objects.csv": {
+      "bytes": 1140003,
+      "sha256": "a3e8b0c7dd1eb6400084167eb1d94513f930e82facd658d29627ff8dc08f5fbd"
+    },
+    "sample_submission.csv": {
+      "bytes": 788886,
+      "sha256": "5bbd643bc33a2ae80a821e5dbb154699667cfc75abc46662e39615d2d9be9f11"
+    },
+    "vkmarco-doceval-queries.tsv": {
+      "bytes": 143100,
+      "sha256": "5e77bc8f64eb16af989fdd1dc5c531e97bf6e8a050e9fc78f5bd1e945059e736"
+    },
+    "vkmarco-docs.tsv": {
+      "bytes": 981304998,
+      "sha256": "138809a012104b64b6ea3d611e76532860b8818a18cd6ec607fb7cc3fddf9726"
+    },
+    "vkmarco-doctrain-qrels.tsv": {
+      "bytes": 498718,
+      "sha256": "2bb01f5dcdd20144e9fb46c436dbcf345c6cbe38ba4ca3c3a3705c4251111c79"
+    },
+    "vkmarco-doctrain-queries.tsv": {
+      "bytes": 76878,
+      "sha256": "084bfaf7ea230c0db8d37851c97b2d1d689cf00f1427eb205568ca4f7be86678"
+    }
+  }
+}

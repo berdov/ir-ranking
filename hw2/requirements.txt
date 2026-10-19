@@ -1,0 +1,5 @@
+DAWG2-Python==0.9.0
+numpy==2.5.4
+pymorphy3==2.0.6
+pymorphy3-dicts-ru==2.4.417150.4580142
+setuptools==84.0.0

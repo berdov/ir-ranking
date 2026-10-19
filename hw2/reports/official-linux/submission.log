@@ -1,0 +1,8 @@
+read documents=10000, elapsed=37.6s
+read documents=20000, elapsed=76.3s
+read documents=30000, elapsed=123.0s
+read documents=40000, elapsed=160.6s
+read documents=50000, elapsed=204.4s
+read documents=60000, elapsed=242.3s
+read documents=70000, elapsed=280.3s
+{"selected": {"model": "blend", "base": {"model": "bm25f", "k1": 2.0, "b_body": 0.6, "b_title": 0.3, "w_title": 4.0, "w_url": 0.25, "b_url": 0.3}, "lm_mu": 1000.0, "lm_weight": 0.0, "phrase_weight": 0.1, "coverage_weight": 0.0, "proximity_weight": 0.02}, "seconds": 298.082, "submission": "/work/reports/official-linux/submission.csv"}
