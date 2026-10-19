@@ -1,0 +1,15 @@
+{
+  "competition": "text-ranking-homework-vk-ir-hse-fall-2026",
+  "username": "whuliss",
+  "observed_on": "2026-10-19",
+  "submission_file": "hw2_submission.csv",
+  "status": "Success",
+  "public_score": 0.61356,
+  "baseline_score": 0.605,
+  "baseline_beaten": true,
+  "private_score": null,
+  "source": "https://www.kaggle.com/competitions/text-ranking-homework-vk-ir-hse-fall-2026/leaderboard",
+  "verification": "Observed authenticated Kaggle leaderboard: recent submission filename and whuliss profile row",
+  "prepared_file_sha256": "c4ae290502c15a234aed3bdc0e413d1b0667128429b3c9ec0bd52e75782b82ed",
+  "hash_note": "Hash of prepared local CSV; remote file bytes were not downloaded for comparison"
+}
