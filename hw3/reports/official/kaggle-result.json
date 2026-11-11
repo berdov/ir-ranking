@@ -1,0 +1,18 @@
+{
+  "competition": "learning-to-rank-homework-vk-ir-hse-fall-2026",
+  "competition_url": "https://www.kaggle.com/competitions/learning-to-rank-homework-vk-ir-hse-fall-2026",
+  "kaggle_username": "whuliss",
+  "submission_file": "hw3_submission.csv",
+  "public_ndcg_at_10": 0.62630,
+  "baseline_public_ndcg_at_10": 0.61621,
+  "improvement_over_baseline": 0.01009,
+  "baseline_beaten": true,
+  "reported_date_msk": "2026-11-11",
+  "score_evidence": "User reported 0.62630 in this conversation in response to the request for the processed Kaggle score of hw3_submission.csv",
+  "browser_verified": false,
+  "prepared_submission_sha256": "3dafdbf058fef307e1c0be870acec11a5276e73b37d2fecb792a0d6455f0cd32",
+  "hash_evidence": "SHA256 of the locally prepared and validated CSV; the uploaded file was not downloaded back from Kaggle",
+  "training_config_sha256": "148561815564ccc87d292fc4d46efe6eefd8af7e3345a8df361e8133906d948c",
+  "private_score": null,
+  "lms_submission_confirmed": false
+}
