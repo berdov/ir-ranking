@@ -17,3 +17,13 @@ hw2/submission*.csv
 hw2/reports/*/data/
 hw2/reports/*/submission*.csv
 hw2/reports/*/features*.npz
+hw3/data/
+hw3/*.bin
+hw3/submission*.csv
+hw3/reports/*/models/
+hw3/reports/*/data/
+hw3/reports/*/*.bin
+hw3/reports/*/*.npz
+hw3/reports/*/submission*.csv
+hw3/reports/official/kaggle-target.json
+hw3/reports/synthetic*/

@@ -1,0 +1,1 @@
+{"mode": "train", "output": "/results/model.bin", "rows": 223044, "queries": 7000, "seconds": 171.34, "peak_rss_bytes": 1405333504, "sha256": "1cd92c54c3370c55a21bbeb9cf0f1675a7de74436259533d767863ca08db18b1"}

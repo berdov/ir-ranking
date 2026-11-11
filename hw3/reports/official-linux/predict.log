@@ -1,0 +1,1 @@
+{"mode": "predict", "output": "/results/submission.csv", "rows": 94633, "queries": 3000, "seconds": 2.268, "peak_rss_bytes": 612483072, "sha256": "3dafdbf058fef307e1c0be870acec11a5276e73b37d2fecb792a0d6455f0cd32"}

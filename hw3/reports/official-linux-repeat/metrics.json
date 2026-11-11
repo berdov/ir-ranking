@@ -1,0 +1,144 @@
+{
+  "kind": "official",
+  "measured_at_utc": "2026-11-11T17:44:33.113071+00:00",
+  "platform": "Linux-7.2.12-orbstack-00394-gbecdd6130068-aarch64-with-glibc2.36",
+  "python": "3.12.16 (main, Nov  5 2026, 08:06:51) [GCC 12.2.0]",
+  "data_dir": "/data",
+  "training_time_limit_seconds": 1800.0,
+  "memory_limit_bytes": 8000000000,
+  "threads": 4,
+  "method": "Fresh child per mode; wall time includes imports; exact wait4 peak RSS",
+  "memory_enforcement": "Linux cgroup v2 hard cap, swap disabled, plus wait4 RSS",
+  "passed": true,
+  "public_kaggle_score": null,
+  "source_sha256": {
+    "audit.py": "0399abfeae31db1ccc370dbfc8cb0c113ccd393781d4eed0890823ace5f8b5e7",
+    "best_config.json": "148561815564ccc87d292fc4d46efe6eefd8af7e3345a8df361e8133906d948c",
+    "data.py": "fbd4f7a1f45484a3cdeeb5356fec53289c5ab20391433a8ee8697611c33eb9f4",
+    "experiments.py": "4d5e1688a31b1a961e43fe86b9535294cedd13223e297f0e297ba72d8e8871d5",
+    "features.py": "77578f2be65b09a74255702c39ad72100446def8a4d0c82a605743467212b34e",
+    "metrics.py": "119c1adb78483abc88cc71f4196f21908835ff7768490e51aa4698b13f3e4c5d",
+    "modeling.py": "3d037ca1110f583af2d3196224273baebfbe08f74f51153cad1b3303687c8dbe",
+    "refine.py": "e55e130fd314f3d2938dd94792c8a8421bcfbd78cc6094722e99bdd7dd7df6d0",
+    "requirements.txt": "72188902c4e8a1dcfa57c4670d30a4c5bf3be4c8c8b933b0d03a1b34dd54e453",
+    "scripts/benchmark.py": "0963aafc133faf73d579950ab0957abd038f69a26ddf7f07f42add29a9f7371f",
+    "scripts/validate_submission.py": "a2e0f67dd901cae9019e2f5344af5e36d081436bcb83d5150da76e35a2b717fd",
+    "solution.py": "099ec97930debc350537999adcb44d923745b6e7290cc6a3ead191d9d8783c96"
+  },
+  "config": {
+    "path": "/work/best_config.json",
+    "sha256": "148561815564ccc87d292fc4d46efe6eefd8af7e3345a8df361e8133906d948c"
+  },
+  "input_files": {
+    "train.csv": {
+      "bytes": 82670693,
+      "sha256": "7bed0e0d6e26d1d0f1d29c98a4f6c4f932e3f4f495755954bc5a158b3c73464d"
+    },
+    "test.csv": {
+      "bytes": 35410327,
+      "sha256": "7b4377320fc086f5d554f38858a357a2cb9079365c8b01013b46db019bfaf445"
+    },
+    "features.md": {
+      "bytes": 5224,
+      "sha256": "e5cdbd0b670486e1041f257ce7e42cc5a3afe2efe7035725407f3d1759d6a578"
+    },
+    "sample_submission.csv": {
+      "bytes": 1397825,
+      "sha256": "5268edeab7c9491787075ece542c87bd3761f5363673636ca1409faabee9e65a"
+    }
+  },
+  "cgroup_before": {
+    "path": "/sys/fs/cgroup",
+    "memory.max": 8000000000,
+    "memory.swap.max": 0,
+    "memory.peak": 102395904,
+    "events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0,
+      "sock_throttled": 0
+    }
+  },
+  "train": {
+    "command": [
+      "/usr/local/bin/python",
+      "/work/solution.py",
+      "--model_file=/results/model.bin",
+      "--threads=4",
+      "--train",
+      "--config_file=/work/best_config.json",
+      "/data"
+    ],
+    "seconds": 171.7232,
+    "peak_rss_bytes": 1405333504,
+    "peak_rss_mib": 1340.23,
+    "sampled_peak_rss_bytes": 1396432896,
+    "returncode": 0,
+    "termination_reason": null,
+    "within_time_limit": true,
+    "within_memory_limit": true,
+    "log": "/results/train.log",
+    "passed": true
+  },
+  "model_sha256": "1cd92c54c3370c55a21bbeb9cf0f1675a7de74436259533d767863ca08db18b1",
+  "predict": {
+    "command": [
+      "/usr/local/bin/python",
+      "/work/solution.py",
+      "--model_file=/results/model.bin",
+      "--threads=4",
+      "--submission_file=/results/submission.csv",
+      "/data"
+    ],
+    "seconds": 2.4043,
+    "peak_rss_bytes": 611770368,
+    "peak_rss_mib": 583.43,
+    "sampled_peak_rss_bytes": 602558464,
+    "returncode": 0,
+    "termination_reason": null,
+    "within_time_limit": true,
+    "within_memory_limit": true,
+    "log": "/results/predict.log",
+    "passed": true
+  },
+  "validation": {
+    "passed": true,
+    "rows": 94633,
+    "unique_object_ids": 94633,
+    "matches_test_order": true,
+    "sample_checked": true,
+    "scores_finite": true,
+    "min_score": -3.8248423134869007,
+    "max_score": 4.303652804738001,
+    "submission_sha256": "3dafdbf058fef307e1c0be870acec11a5276e73b37d2fecb792a0d6455f0cd32",
+    "test_sha256": "7b4377320fc086f5d554f38858a357a2cb9079365c8b01013b46db019bfaf445"
+  },
+  "submission_sha256": "3dafdbf058fef307e1c0be870acec11a5276e73b37d2fecb792a0d6455f0cd32",
+  "cgroup_after": {
+    "path": "/sys/fs/cgroup",
+    "memory.max": 8000000000,
+    "memory.swap.max": 0,
+    "memory.peak": 1420283904,
+    "events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0,
+      "sock_throttled": 0
+    }
+  },
+  "cgroup_events_delta": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0,
+    "sock_throttled": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "score_normalization": "zscore",
+  "components": [
+    {
+      "name": "cat_yeti_rank_seed17",
+      "family": "catboost",
+      "features": "rank",
+      "iterations": 697,
+      "gain": "exp2",
+      "seed": 17,
+      "params": {
+        "depth": 6,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 5.0,
+        "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+      },
+      "weight": 0.5
+    },
+    {
+      "name": "cat_yeti_rank_d8",
+      "family": "catboost",
+      "features": "rank",
+      "iterations": 792,
+      "gain": "exp2",
+      "seed": 42,
+      "params": {
+        "depth": 8,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 5.0,
+        "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+      },
+      "weight": 0.5
+    }
+  ],
+  "status": "selected_on_training_queries",
+  "selection": {
+    "name": "cat_yeti_rank_seed17+cat_yeti_rank_d8:zscore:0.5",
+    "tuning_ndcg": 0.6247378255907198,
+    "gain": "exp2",
+    "refinement_signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+    "holdout_used": false
+  }
+}

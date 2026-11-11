@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "method": "Two fresh Linux CPU training and prediction runs from the same data, code and configuration",
+  "rows": 94633,
+  "csv_byte_identical": true,
+  "download_copy_identical": true,
+  "submission_sha256": "3dafdbf058fef307e1c0be870acec11a5276e73b37d2fecb792a0d6455f0cd32",
+  "config_sha256": "148561815564ccc87d292fc4d46efe6eefd8af7e3345a8df361e8133906d948c",
+  "train_seconds": [
+    240.5599,
+    171.7232
+  ],
+  "peak_train_rss_bytes": [
+    1397600256,
+    1405333504
+  ],
+  "first_run_concurrent_with_holdout_audit": true,
+  "model_archive_bytes_expected_to_differ": "Training times and library metadata; prediction CSV is the reproducibility target"
+}

@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "score_normalization": "none",
+  "components": [
+    {
+      "name": "cat_yeti_rank",
+      "family": "catboost",
+      "features": "rank",
+      "iterations": 385,
+      "gain": "exp2",
+      "params": {
+        "depth": 6,
+        "learning_rate": 0.04,
+        "l2_leaf_reg": 5.0,
+        "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+      },
+      "weight": 1.0
+    }
+  ],
+  "status": "selected_on_training_queries",
+  "selection": {
+    "tuning_ndcg": 0.621871625212473,
+    "name": "cat_yeti_rank",
+    "gain": "exp2"
+  }
+}

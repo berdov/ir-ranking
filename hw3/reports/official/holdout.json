@@ -1,0 +1,35 @@
+{
+  "purpose": "audit of a frozen configuration; does not modify selection",
+  "train_sha256": "7bed0e0d6e26d1d0f1d29c98a4f6c4f932e3f4f495755954bc5a158b3c73464d",
+  "config_sha256": "148561815564ccc87d292fc4d46efe6eefd8af7e3345a8df361e8133906d948c",
+  "seed": 42,
+  "threads": 4,
+  "fit_queries": 6000,
+  "holdout_queries": 1000,
+  "used_for_selection": false,
+  "exp2": {
+    "baseline_ndcg": 0.6085788550972229,
+    "selected_ndcg": 0.6149066235111007,
+    "paired_delta": 0.006327768413877804,
+    "bootstrap_95pct_ci": [
+      0.0015117761465741806,
+      0.011039337945833639
+    ],
+    "queries_improved": 500,
+    "queries_worsened": 434,
+    "queries_unchanged": 66
+  },
+  "linear": {
+    "baseline_ndcg": 0.7208469320622793,
+    "selected_ndcg": 0.7257263199460006,
+    "paired_delta": 0.004879387883721027,
+    "bootstrap_95pct_ci": [
+      0.0013079372607445407,
+      0.008382482930494452
+    ],
+    "queries_improved": 497,
+    "queries_worsened": 437,
+    "queries_unchanged": 66
+  },
+  "seconds": 238.804
+}

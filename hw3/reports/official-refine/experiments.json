@@ -1,0 +1,768 @@
+{
+  "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+  "train_sha256": "7bed0e0d6e26d1d0f1d29c98a4f6c4f932e3f4f495755954bc5a158b3c73464d",
+  "gain": "exp2",
+  "seed": 42,
+  "initial_candidates": [
+    {
+      "name": "baseline_yetirank200",
+      "config": {
+        "name": "baseline_yetirank200",
+        "family": "catboost",
+        "features": "raw",
+        "iterations": 200,
+        "gain": "exp2",
+        "params": {},
+        "seed": 0
+      },
+      "tuning_ndcg": 0.6135966665412439,
+      "model_sha256": "b96b67a6ae2d42cee1efa2a6ccb4da6ab0c4359c69fe6ab89c10d3873a80bd27",
+      "predictions_sha256": "e6675d2906b37d3caca87a20eb8a0b30d8e1de39a1c64549798a7376bb7dc0c4"
+    },
+    {
+      "name": "lgb_raw_31",
+      "config": {
+        "name": "lgb_raw_31",
+        "family": "lightgbm",
+        "features": "raw",
+        "iterations": 218,
+        "gain": "exp2",
+        "params": {
+          "num_leaves": 31
+        }
+      },
+      "tuning_ndcg": 0.6163007416537016,
+      "model_sha256": "d9786563d5596356e294a4c79e4a53e3542c477bad0cc44c1861458106f6b897",
+      "predictions_sha256": "f789730769b9c86d266d0f73cb9ab6ceaf1ad532443d21a4be1a00c7e0d2c735"
+    },
+    {
+      "name": "lgb_rank_31",
+      "config": {
+        "name": "lgb_rank_31",
+        "family": "lightgbm",
+        "features": "rank",
+        "iterations": 218,
+        "gain": "exp2",
+        "params": {
+          "num_leaves": 31
+        }
+      },
+      "tuning_ndcg": 0.6188610320684425,
+      "model_sha256": "c3289be9c7eb9867678fc465e8c990eee8c829d70454d07ad9f5f219159a8e3d",
+      "predictions_sha256": "242edf1364afe4be53e297c7a56774b79442b48939e0e1364ced7789fea71db9"
+    },
+    {
+      "name": "lgb_relative_31",
+      "config": {
+        "name": "lgb_relative_31",
+        "family": "lightgbm",
+        "features": "relative",
+        "iterations": 258,
+        "gain": "exp2",
+        "params": {
+          "num_leaves": 31
+        }
+      },
+      "tuning_ndcg": 0.6199629048446591,
+      "model_sha256": "7bb482e763ce3f1c35f6b1461cd075439aa4402f7932bc3c635bbcf1f0b375a4",
+      "predictions_sha256": "684b8ca66b20789616e25c33770031d37bce01b20f97ee098de4fd3eac0e15a5"
+    },
+    {
+      "name": "lgb_raw_63",
+      "config": {
+        "name": "lgb_raw_63",
+        "family": "lightgbm",
+        "features": "raw",
+        "iterations": 220,
+        "gain": "exp2",
+        "params": {
+          "num_leaves": 63,
+          "min_data_in_leaf": 80,
+          "lambda_l2": 10.0
+        }
+      },
+      "tuning_ndcg": 0.612896598675476,
+      "model_sha256": "b006ca986a523cc16ae1f53e921da6fb31d9c8d35bb26c8da4d13c8d31108cdf",
+      "predictions_sha256": "7f5a0d9c1b7e28c7dac0c84ce7b3737e4f8bb308de64057a92379ba2d67d8777"
+    },
+    {
+      "name": "lgb_relative_63",
+      "config": {
+        "name": "lgb_relative_63",
+        "family": "lightgbm",
+        "features": "relative",
+        "iterations": 135,
+        "gain": "exp2",
+        "params": {
+          "num_leaves": 63,
+          "min_data_in_leaf": 80,
+          "lambda_l2": 10.0
+        }
+      },
+      "tuning_ndcg": 0.6163496527394504,
+      "model_sha256": "6a06894cae2e67479488000bab4b34381fbd7f7158be3c7d854a07f945dbda9b",
+      "predictions_sha256": "3224a55fc1fb33af258944cbd672e2a874ae183259d961316ffb7b34009c24ec"
+    },
+    {
+      "name": "lgb_xendcg_relative",
+      "config": {
+        "name": "lgb_xendcg_relative",
+        "family": "lightgbm",
+        "features": "relative",
+        "iterations": 383,
+        "gain": "exp2",
+        "params": {
+          "objective": "rank_xendcg",
+          "num_leaves": 31
+        }
+      },
+      "tuning_ndcg": 0.6215602061390837,
+      "model_sha256": "dc8a26184041fbb9fc95bc974e38d4cd8f76e9483e478b49d49134f8f8cc68b7",
+      "predictions_sha256": "77c4e4af7645ad92adb4dbfcfb8f607f51fd97e98c05efd2b8d9824ad0670da1"
+    },
+    {
+      "name": "cat_yeti_raw",
+      "config": {
+        "name": "cat_yeti_raw",
+        "family": "catboost",
+        "features": "raw",
+        "iterations": 188,
+        "gain": "exp2",
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "tuning_ndcg": 0.6145908537912619,
+      "model_sha256": "b5db3803c6903f23fd24d3e23ccbe285477ad29bffefec87c3e620ab36a6dc21",
+      "predictions_sha256": "1c8ca5f6f276fcc305344be051d9bf067783973a7e301d06dcb34f5ac4b1a165"
+    },
+    {
+      "name": "cat_yeti_rank",
+      "config": {
+        "name": "cat_yeti_rank",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 385,
+        "gain": "exp2",
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "tuning_ndcg": 0.621871625212473,
+      "model_sha256": "9d6312b5c923b1d85d62fe55a68ac6e5a151ba2ccb445fa09fcdb62da0e793fb",
+      "predictions_sha256": "6c456f19003ea1c01e763d706f5b9233b1a9d84ab1f9a2bb924feabb93ed9d40"
+    },
+    {
+      "name": "cat_ndcg_rank",
+      "config": {
+        "name": "cat_ndcg_rank",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 537,
+        "gain": "exp2",
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition",
+          "loss_function": "YetiRank:mode=NDCG;top=10;dcg_type=Exp;dcg_denominator=LogPosition"
+        }
+      },
+      "tuning_ndcg": 0.6180481783225257,
+      "model_sha256": "eabda87c3f253edc43d4bcbed7e228fed01e5afa4e269773086407eaf81d443c",
+      "predictions_sha256": "1e851e02feb9e525080dfbb5e40877fc43721d9472ea715620d0633f11d06243"
+    }
+  ],
+  "candidates": [
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_yeti_rank_d4",
+      "specification": {
+        "name": "cat_yeti_rank_d4",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 4,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "config": {
+        "name": "cat_yeti_rank_d4",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 668,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 4,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "seconds": 55.972,
+      "tuning_ndcg": 0.6223106819298002,
+      "tuning_ndcg_other_gain": 0.7309686666808133,
+      "model_sha256": "dbd4fbdfa0927b699c37e50aa206fc630352de93b4e74ec648728e2edefdc1bf",
+      "predictions_sha256": "4e81afe3fc1060964f28ad790adf5132278d4d9baeeb23f813ddac058065b229"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_yeti_rank_d5",
+      "specification": {
+        "name": "cat_yeti_rank_d5",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 5,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "config": {
+        "name": "cat_yeti_rank_d5",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 519,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 5,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "seconds": 47.152,
+      "tuning_ndcg": 0.6237061877051785,
+      "tuning_ndcg_other_gain": 0.7320796020625874,
+      "model_sha256": "36a3484ff5c466a5c1421a5e8a6ce608e3fe974db360a36474451e24db8ad52c",
+      "predictions_sha256": "152afa089f3b81105cb81244c4a9f1900b065e60b74deb02831ab47175126a73"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_yeti_rank_d7",
+      "specification": {
+        "name": "cat_yeti_rank_d7",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 7,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "config": {
+        "name": "cat_yeti_rank_d7",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 882,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 7,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "seconds": 82.771,
+      "tuning_ndcg": 0.6219212177292376,
+      "tuning_ndcg_other_gain": 0.7311778073604036,
+      "model_sha256": "4cd683cbb320aadbe48d4e0107598fa2527b887121c2db7e542d22a56c04c42d",
+      "predictions_sha256": "c6f0e0011eaaefcc926003ecc502ca94eb293b99a828baacbdd4d9dbac4bcf9f"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_yeti_rank_d8",
+      "specification": {
+        "name": "cat_yeti_rank_d8",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 8,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "config": {
+        "name": "cat_yeti_rank_d8",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 792,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 8,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "seconds": 83.658,
+      "tuning_ndcg": 0.6238894485129747,
+      "tuning_ndcg_other_gain": 0.7323948045694144,
+      "model_sha256": "6573d0c29702e41bcd196640fccf60d5ed03028b3ac9579f3aa7736c30b9f4f9",
+      "predictions_sha256": "37f6fe45c5caab84208fdc711dd84c000e48902cbf728fc8c54312fcd0b9e61e"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_yeti_relative_d6",
+      "specification": {
+        "name": "cat_yeti_relative_d6",
+        "family": "catboost",
+        "features": "relative",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "config": {
+        "name": "cat_yeti_relative_d6",
+        "family": "catboost",
+        "features": "relative",
+        "iterations": 650,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "seconds": 65.657,
+      "tuning_ndcg": 0.6216915727973742,
+      "tuning_ndcg_other_gain": 0.7306659984563191,
+      "model_sha256": "7e0e25168c917e9d85a4c2c4892737551c9ee70ddea1b363d8b71ff93e276845",
+      "predictions_sha256": "78e677564498055a48ff700c3ebe19c08ce56a93845ecc362b17d6a859bad1cb"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_yeti_rank_regularized",
+      "specification": {
+        "name": "cat_yeti_rank_regularized",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 20.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition",
+          "bootstrap_type": "Bayesian",
+          "bagging_temperature": 0.3,
+          "random_strength": 0.5
+        }
+      },
+      "config": {
+        "name": "cat_yeti_rank_regularized",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 726,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 20.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition",
+          "bootstrap_type": "Bayesian",
+          "bagging_temperature": 0.3,
+          "random_strength": 0.5
+        }
+      },
+      "seconds": 68.012,
+      "tuning_ndcg": 0.6216179924131585,
+      "tuning_ndcg_other_gain": 0.7306251014217412,
+      "model_sha256": "311d18a2ad7f8523530dda9422fbe2c54a4b83bc88340b3ff22993e22ad9b603",
+      "predictions_sha256": "9cc7a21ee64edab42aba3c3f7068104924c0be998f477734894294147d399217"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_pairlogit_rank_d6",
+      "specification": {
+        "name": "cat_pairlogit_rank_d6",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition",
+          "loss_function": "PairLogit"
+        }
+      },
+      "config": {
+        "name": "cat_pairlogit_rank_d6",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 718,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition",
+          "loss_function": "PairLogit"
+        }
+      },
+      "seconds": 228.23,
+      "tuning_ndcg": 0.6233691299170873,
+      "tuning_ndcg_other_gain": 0.7326369460369151,
+      "model_sha256": "ef6fac995608a331c2843e3452836f7c85db01167ee3294e9e47a6d1e2fce330",
+      "predictions_sha256": "e19f0d606c8ed23161ddcf6b97e8e8c66776f08331a672b61b57690bd93f667a"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "lgb_lambdarank_relative_15",
+      "specification": {
+        "name": "lgb_lambdarank_relative_15",
+        "family": "lightgbm",
+        "features": "relative",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "objective": "lambdarank",
+          "num_leaves": 15,
+          "min_data_in_leaf": 80,
+          "lambda_l2": 10.0
+        }
+      },
+      "config": {
+        "name": "lgb_lambdarank_relative_15",
+        "family": "lightgbm",
+        "features": "relative",
+        "iterations": 420,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "objective": "lambdarank",
+          "num_leaves": 15,
+          "min_data_in_leaf": 80,
+          "lambda_l2": 10.0
+        }
+      },
+      "seconds": 13.593,
+      "tuning_ndcg": 0.6211404658666361,
+      "tuning_ndcg_other_gain": 0.7287775134728243,
+      "model_sha256": "27c70b141ed986fd7bc0972400c76e048976a3080410b63b1e4ab578be8154f2",
+      "predictions_sha256": "fce3f0b4fbb0ac94dff844d947daac7c9a1fe622015e375df273a70f8cc68a54"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "lgb_rank_xendcg_relative_15",
+      "specification": {
+        "name": "lgb_rank_xendcg_relative_15",
+        "family": "lightgbm",
+        "features": "relative",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "objective": "rank_xendcg",
+          "num_leaves": 15,
+          "min_data_in_leaf": 80,
+          "lambda_l2": 10.0
+        }
+      },
+      "config": {
+        "name": "lgb_rank_xendcg_relative_15",
+        "family": "lightgbm",
+        "features": "relative",
+        "iterations": 548,
+        "gain": "exp2",
+        "seed": 42,
+        "params": {
+          "objective": "rank_xendcg",
+          "num_leaves": 15,
+          "min_data_in_leaf": 80,
+          "lambda_l2": 10.0
+        }
+      },
+      "seconds": 15.308,
+      "tuning_ndcg": 0.621187074852275,
+      "tuning_ndcg_other_gain": 0.7296276751693058,
+      "model_sha256": "35ea27cf151c9e60c22c1db8f03a6057469f672976bd561c8aa90f04b86af0a8",
+      "predictions_sha256": "84d1e51c77b723019f603714c32938e1595ab1185bdab5d2161887066892f9fc"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_yeti_rank_seed17",
+      "specification": {
+        "name": "cat_yeti_rank_seed17",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 17,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "config": {
+        "name": "cat_yeti_rank_seed17",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 697,
+        "gain": "exp2",
+        "seed": 17,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "seconds": 66.111,
+      "tuning_ndcg": 0.6246781559607715,
+      "tuning_ndcg_other_gain": 0.7329393396646448,
+      "model_sha256": "0b4e17b71eb74d32d6e8d01ff27d8be4c5131a4a3bc89ac5a01ce3b5e3f77371",
+      "predictions_sha256": "ff1e8f4974ae00944f98cf11b473c4e8d7671ccc2e9f5f09bc8d45950bef9447"
+    },
+    {
+      "signature": "142ecc35791aa0b00c76015b21a58fe86e72ef68d197aa64cbdb74bba12742b8",
+      "name": "cat_yeti_rank_seed73",
+      "specification": {
+        "name": "cat_yeti_rank_seed73",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 1200,
+        "gain": "exp2",
+        "seed": 73,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "config": {
+        "name": "cat_yeti_rank_seed73",
+        "family": "catboost",
+        "features": "rank",
+        "iterations": 518,
+        "gain": "exp2",
+        "seed": 73,
+        "params": {
+          "depth": 6,
+          "learning_rate": 0.04,
+          "l2_leaf_reg": 5.0,
+          "eval_metric": "NDCG:top=10;type=Exp;denominator=LogPosition"
+        }
+      },
+      "seconds": 49.854,
+      "tuning_ndcg": 0.6231431281438963,
+      "tuning_ndcg_other_gain": 0.7317941936047675,
+      "model_sha256": "05f682c9bfa9ed2c090f396ae5cf3cc3c01d2e481b11c1d8a0f4a9cc1fad985b",
+      "predictions_sha256": "d209f7983598cbbe28555e127ce7089a928dcda34c7bf5a546c8bc5ed325ffae"
+    }
+  ],
+  "holdout_used": false,
+  "test_read": false,
+  "selection": {
+    "name": "cat_yeti_rank_seed17+cat_yeti_rank_d8:zscore:0.5",
+    "tuning_ndcg": 0.6247378255907198,
+    "choices": [
+      {
+        "name": "cat_yeti_rank_seed17",
+        "tuning_ndcg": 0.6246781559607715
+      },
+      {
+        "name": "cat_yeti_rank_d8",
+        "tuning_ndcg": 0.6238894485129747
+      },
+      {
+        "name": "cat_yeti_rank_d5",
+        "tuning_ndcg": 0.6237061877051785
+      },
+      {
+        "name": "cat_pairlogit_rank_d6",
+        "tuning_ndcg": 0.6233691299170873
+      },
+      {
+        "name": "cat_yeti_rank_seed73",
+        "tuning_ndcg": 0.6231431281438963
+      },
+      {
+        "name": "cat_yeti_rank_d4",
+        "tuning_ndcg": 0.6223106819298002
+      },
+      {
+        "name": "cat_yeti_rank_d7",
+        "tuning_ndcg": 0.6219212177292376
+      },
+      {
+        "name": "cat_yeti_rank",
+        "tuning_ndcg": 0.621871625212473
+      },
+      {
+        "name": "cat_yeti_relative_d6",
+        "tuning_ndcg": 0.6216915727973742
+      },
+      {
+        "name": "cat_yeti_rank_regularized",
+        "tuning_ndcg": 0.6216179924131585
+      },
+      {
+        "name": "lgb_xendcg_relative",
+        "tuning_ndcg": 0.6215602061390837
+      },
+      {
+        "name": "lgb_rank_xendcg_relative_15",
+        "tuning_ndcg": 0.621187074852275
+      },
+      {
+        "name": "lgb_lambdarank_relative_15",
+        "tuning_ndcg": 0.6211404658666361
+      },
+      {
+        "name": "lgb_relative_31",
+        "tuning_ndcg": 0.6199629048446591
+      },
+      {
+        "name": "lgb_rank_31",
+        "tuning_ndcg": 0.6188610320684425
+      },
+      {
+        "name": "cat_ndcg_rank",
+        "tuning_ndcg": 0.6180481783225257
+      },
+      {
+        "name": "lgb_relative_63",
+        "tuning_ndcg": 0.6163496527394504
+      },
+      {
+        "name": "lgb_raw_31",
+        "tuning_ndcg": 0.6163007416537016
+      },
+      {
+        "name": "cat_yeti_raw",
+        "tuning_ndcg": 0.6145908537912619
+      },
+      {
+        "name": "baseline_yetirank200",
+        "tuning_ndcg": 0.6135966665412439
+      },
+      {
+        "name": "lgb_raw_63",
+        "tuning_ndcg": 0.612896598675476
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_yeti_rank_d8:zscore:0.25",
+        "tuning_ndcg": 0.6245433233367341
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_yeti_rank_d8:zscore:0.5",
+        "tuning_ndcg": 0.6247378255907198
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_yeti_rank_d8:zscore:0.75",
+        "tuning_ndcg": 0.6242945926771662
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_yeti_rank_d5:zscore:0.25",
+        "tuning_ndcg": 0.6245590748431318
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_yeti_rank_d5:zscore:0.5",
+        "tuning_ndcg": 0.623932262834113
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_yeti_rank_d5:zscore:0.75",
+        "tuning_ndcg": 0.62385898687125
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_pairlogit_rank_d6:zscore:0.25",
+        "tuning_ndcg": 0.6219018429462694
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_pairlogit_rank_d6:zscore:0.5",
+        "tuning_ndcg": 0.6236824473227173
+      },
+      {
+        "name": "cat_yeti_rank_seed17+cat_pairlogit_rank_d6:zscore:0.75",
+        "tuning_ndcg": 0.6232519001749748
+      },
+      {
+        "name": "cat_yeti_rank_d8+cat_yeti_rank_d5:zscore:0.25",
+        "tuning_ndcg": 0.6235080125554809
+      },
+      {
+        "name": "cat_yeti_rank_d8+cat_yeti_rank_d5:zscore:0.5",
+        "tuning_ndcg": 0.6229615920018678
+      },
+      {
+        "name": "cat_yeti_rank_d8+cat_yeti_rank_d5:zscore:0.75",
+        "tuning_ndcg": 0.6229199221211904
+      },
+      {
+        "name": "cat_yeti_rank_d8+cat_pairlogit_rank_d6:zscore:0.25",
+        "tuning_ndcg": 0.6221457124458954
+      },
+      {
+        "name": "cat_yeti_rank_d8+cat_pairlogit_rank_d6:zscore:0.5",
+        "tuning_ndcg": 0.6227778519132416
+      },
+      {
+        "name": "cat_yeti_rank_d8+cat_pairlogit_rank_d6:zscore:0.75",
+        "tuning_ndcg": 0.6235999174236455
+      },
+      {
+        "name": "cat_yeti_rank_d5+cat_pairlogit_rank_d6:zscore:0.25",
+        "tuning_ndcg": 0.6216121553592402
+      },
+      {
+        "name": "cat_yeti_rank_d5+cat_pairlogit_rank_d6:zscore:0.5",
+        "tuning_ndcg": 0.6224712056274565
+      },
+      {
+        "name": "cat_yeti_rank_d5+cat_pairlogit_rank_d6:zscore:0.75",
+        "tuning_ndcg": 0.6228256342399524
+      },
+      {
+        "name": "cat_yeti_rank:three_seeds",
+        "tuning_ndcg": 0.6233467635188344
+      }
+    ]
+  },
+  "seconds_this_invocation": 778.362
+}

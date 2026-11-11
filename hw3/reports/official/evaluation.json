@@ -1,0 +1,13 @@
+{
+  "source": "Kaggle Evaluation screenshot supplied by the user in this conversation on 2026-11-11",
+  "metric": "mean query nDCG@10",
+  "gain": "2**relevance - 1",
+  "discount": "1/log2(position+1)",
+  "position_start": 1,
+  "tie_breaker": "ObjectId ascending",
+  "score_comparison": "within each query only",
+  "public_private_split": "half of test queries in each part",
+  "zero_idcg": "not specified in screenshot; no all-zero relevance queries in supplied train",
+  "local_training_ties": "original train row order because train has no ObjectId",
+  "input_file_note": "Screenshot says objects.csv; current HW3 README and supplied archive use test.csv. Submission is validated against test.csv and sample_submission.csv."
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "rows": 94633,
+  "unique_object_ids": 94633,
+  "matches_test_order": true,
+  "sample_checked": true,
+  "scores_finite": true,
+  "min_score": -3.8248423134869007,
+  "max_score": 4.303652804738001,
+  "submission_sha256": "3dafdbf058fef307e1c0be870acec11a5276e73b37d2fecb792a0d6455f0cd32",
+  "test_sha256": "7b4377320fc086f5d554f38858a357a2cb9079365c8b01013b46db019bfaf445"
+}

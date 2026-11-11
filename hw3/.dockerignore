@@ -1,0 +1,9 @@
+.venv
+__pycache__
+**/__pycache__
+*.py[cod]
+data
+reports
+*.bin
+submission*.csv
+.DS_Store
