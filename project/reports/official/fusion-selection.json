@@ -1,0 +1,497 @@
+{
+  "config": {
+    "neural_weight": 0.75,
+    "top_k": 0,
+    "entropy_threshold": 0.0,
+    "target_query_fraction_on_tune": 1.0
+  },
+  "tune_ndcg10": 0.6431331922610832,
+  "baseline_ndcg10": 0.6142463256896276,
+  "trials": [
+    {
+      "config": {
+        "neural_weight": 0.0,
+        "top_k": 0,
+        "entropy_threshold": 0.0
+      },
+      "ndcg10": 0.6142463256896276,
+      "neural_pairs": 0,
+      "neural_queries": 0
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 10,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6151583880332444,
+      "neural_pairs": 5000,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 10,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6163188439938071,
+      "neural_pairs": 5000,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 10,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6166978005235384,
+      "neural_pairs": 5000,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 10,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6166575918321505,
+      "neural_pairs": 5000,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 10,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6165235926319362,
+      "neural_pairs": 10000,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 10,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6188279706377016,
+      "neural_pairs": 10000,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 10,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6203107779009913,
+      "neural_pairs": 10000,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 10,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6198325700517804,
+      "neural_pairs": 10000,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 10,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6183606172451305,
+      "neural_pairs": 20000,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 10,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6223917231109609,
+      "neural_pairs": 20000,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 10,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6247870417680896,
+      "neural_pairs": 20000,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 10,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6236029934419669,
+      "neural_pairs": 20000,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 20,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.616641525799085,
+      "neural_pairs": 9929,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 20,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6190194844551647,
+      "neural_pairs": 9929,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 20,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.619727208803411,
+      "neural_pairs": 9929,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 20,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6193461165096906,
+      "neural_pairs": 9929,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 20,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6191863961989713,
+      "neural_pairs": 19813,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 20,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6238648796123392,
+      "neural_pairs": 19813,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 20,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6262157978070352,
+      "neural_pairs": 19813,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 20,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.625656524509996,
+      "neural_pairs": 19813,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 20,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6243130627870523,
+      "neural_pairs": 39165,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 20,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6347468167066961,
+      "neural_pairs": 39165,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 20,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6394216081830267,
+      "neural_pairs": 39165,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 20,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.63750389269588,
+      "neural_pairs": 39165,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 0,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6171014429383327,
+      "neural_pairs": 17195,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 0,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6195622672916036,
+      "neural_pairs": 17195,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 0,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6208516852770786,
+      "neural_pairs": 17195,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 0,
+        "entropy_threshold": 0.8842496912660873,
+        "target_query_fraction_on_tune": 0.25
+      },
+      "ndcg10": 0.6192569509105242,
+      "neural_pairs": 17195,
+      "neural_queries": 500
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 0,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.620122578476177,
+      "neural_pairs": 33521,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 0,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6254092358056776,
+      "neural_pairs": 33521,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 0,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6284669195668,
+      "neural_pairs": 33521,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 0,
+        "entropy_threshold": 0.859935753984213,
+        "target_query_fraction_on_tune": 0.5
+      },
+      "ndcg10": 0.6260618519547348,
+      "neural_pairs": 33521,
+      "neural_queries": 1000
+    },
+    {
+      "config": {
+        "neural_weight": 0.25,
+        "top_k": 0,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6255173704645769,
+      "neural_pairs": 63289,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 0.5,
+        "top_k": 0,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6370201026417003,
+      "neural_pairs": 63289,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 0.75,
+        "top_k": 0,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6431331922610832,
+      "neural_pairs": 63289,
+      "neural_queries": 2000
+    },
+    {
+      "config": {
+        "neural_weight": 1.0,
+        "top_k": 0,
+        "entropy_threshold": 0.0,
+        "target_query_fraction_on_tune": 1.0
+      },
+      "ndcg10": 0.6383527917243048,
+      "neural_pairs": 63289,
+      "neural_queries": 2000
+    }
+  ],
+  "tune_queries": 2000,
+  "tune_pairs": 63289,
+  "query_ids_sha256": "9ece1736e634cc31e2386d37b3b675e2bf117270304de1799cec9e2a51d83128",
+  "gate": "normalized entropy of softmax(zscore(lexical)), high entropy reranked",
+  "selection_rule": "maximum tune nDCG@10, exact ties prefer fewer neural pairs",
+  "format_version": 1,
+  "metric": {
+    "name": "nDCG@10",
+    "gain": "2**label - 1",
+    "discount": "1/log2(rank+1)",
+    "aggregation": "equal weight per query",
+    "zero_idcg": 0,
+    "training_ties": "lexicographic DocumentId"
+  },
+  "baseline_kind": "selected lexical ranker",
+  "bm25f_ndcg10": 0.5959581189028422,
+  "lexical_ndcg10": 0.6142463256896276,
+  "selected_neural_pairs": 63289,
+  "selected_neural_queries": 2000,
+  "holdout_used_for_selection": false,
+  "inference_environment": {
+    "device": "mps",
+    "batch_size": 32,
+    "threads": 4
+  },
+  "neural_metadata": {
+    "signature": "0b43555691d37531610e1e9e8c669d5086629c87d93b26409e28c2336a8a27ff",
+    "model": {
+      "model_id": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "revision": "1427fd652930e4ba29e8149678df786c240d8825",
+      "license": "Apache-2.0",
+      "files_sha256": {
+        "config.json": "cc2cfe51aa3fd759d21d21acf5dfd6994aa67a3c9210636d22e143699d336c77",
+        "model.safetensors": "5daeca2481a76b5976a2bdc32f0a78532b6716da4f8cd3ff59460ef8d2f359b4",
+        "tokenizer_config.json": "e7fbfbfa6347b4e414c1cee50d142e2c2f9a895dad68b068ae83a8b564c3837e",
+        "special_tokens_map.json": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d",
+        "tokenizer.json": "62c24cdc13d4c9952d63718d6c9fa4c287974249e16b7ade6d5a85e7bbb75626",
+        "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+      },
+      "pretraining_provenance": "Author reports multilingual machine-translated MS MARCO; not fitted here"
+    },
+    "source": {
+      "database_size": 7267889152,
+      "database_mtime_ns": 1795266218646709148,
+      "pair_fingerprint": "bc106680fa3d63c6af0f70a8f4fd860318b4adcab2cf001d44732a8a86058417"
+    },
+    "config": {
+      "version": "query-window-v1",
+      "implementation_sha256": "5e62c804f7a95e3c6e64911935f0863235a983468b5ed07d299ec9d4052fa15a",
+      "max_length": 256,
+      "window_words": 110,
+      "stride": 55,
+      "title_words": 40,
+      "query_token_cap": 64,
+      "device": "mps",
+      "precision": "float32",
+      "batch_size": 32,
+      "passage": "title followed by one query-stem coverage body window"
+    },
+    "requested_rows": 63289,
+    "requested_rows_sha256": "c7d25345d70e548bf2a46258d89f31a11e262a7ada9ba81a29bca03784912abe",
+    "runs": [
+      {
+        "rows": 63289,
+        "seconds": 420.65840012498666,
+        "pairs_per_second": 150.45224339082608
+      }
+    ],
+    "computed_rows": 63289,
+    "requested_complete": true,
+    "latest_run": {
+      "rows": 63289,
+      "seconds": 420.6402734999865,
+      "pairs_per_second": 150.45872681994163
+    }
+  },
+  "fusion_config_sha256": "4e26a774bc5709ac907fdba07b78f4a0bcc906b136965dd8721d697d91dae77f",
+  "lexical_selection_sha256": "9332e17bf3c16b19f09d086e51d6bdcf452e779469b5a885d41812c5e177a942",
+  "seconds": 428.121
+}

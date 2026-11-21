@@ -1,0 +1,38 @@
+{
+  "scope": "Final fusion portability using independently refitted Linux lexical model and the exact SAME previously computed Mac CPU neural scores; no new neural inference, tuning or relevance evaluation",
+  "neural_scores_origin": "Mac CPU batch16 full test cache",
+  "neural_cache": "/Users/berdov/ir-ranking/i.berdov/project/cache/neural-cpu-b16-c69bac8564.npz",
+  "config": {
+    "neural_weight": 0.75,
+    "top_k": 0,
+    "entropy_threshold": 0.0,
+    "target_query_fraction_on_tune": 1.0
+  },
+  "rows": 63546,
+  "queries": 2000,
+  "reference_csv_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f",
+  "comparisons": {
+    "linux_refit": {
+      "score_vectors_identical": true,
+      "csv_bytes_identical": true,
+      "different_rows": 0,
+      "different_queries": 0,
+      "csv_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f"
+    },
+    "macmodel_linuxfeatures": {
+      "score_vectors_identical": true,
+      "csv_bytes_identical": true,
+      "different_rows": 0,
+      "different_queries": 0,
+      "csv_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f"
+    },
+    "macmodel_macfeatures": {
+      "score_vectors_identical": true,
+      "csv_bytes_identical": true,
+      "different_rows": 0,
+      "different_queries": 0,
+      "csv_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f"
+    }
+  },
+  "linux_refit_final_csv_identical": true
+}

@@ -1,0 +1,105 @@
+{
+  "success": true,
+  "scope": "Linux aarch64 portability checks: independent full corpus features, fixed full-training CatBoost refit, all-test fusion with reused Mac neural scores, real 96-pair Linux neural inference, source-bound runtime compatibility and current 40 tests. No retuning or holdout selection.",
+  "checks": {
+    "full_linux_feature_extraction_completed": true,
+    "feature_schema_ids_labels_split_and_corpus_statistics_identical": true,
+    "runtime_source_provenance_verified": true,
+    "runtime_selection_changes_only_fit_tune_hashes": true,
+    "strict_fit_final_runtime_guards_and_model_reuse_passed": true,
+    "fixed_linux_refit_test_rankings_identical": true,
+    "all_test_fusion_csv_identical_using_same_mac_neural_scores": true,
+    "real_linux_neural_96_pair_rank_and_fusion_smoke_passed": true,
+    "latest_40_linux_unit_tests_passed": true
+  },
+  "architecture": "aarch64",
+  "platform": "Linux-7.2.12-orbstack-00394-gbecdd6130068-aarch64-with-glibc2.41",
+  "python": "3.12.16",
+  "resource_limits": {
+    "memory_bytes": 3000000000,
+    "memory_swap_bytes": 3000000000,
+    "nano_cpus": 2000000000,
+    "network_mode": "none"
+  },
+  "feature_extraction": {
+    "documents": 1258656,
+    "matrix_shape": [
+      523576,
+      99
+    ],
+    "wall_seconds": 2034.5115018309998,
+    "native_peak_rss_bytes": 1191419904,
+    "raw_float32_bitwise_equal": false,
+    "differing_elements": 28458,
+    "max_abs_difference": 9.5367431640625e-07,
+    "columns_with_differences": {
+      "lm_title_mu1500": 5489,
+      "lm_body_mu1500": 69,
+      "lm_url_mu1500": 22900
+    }
+  },
+  "model_refit": {
+    "train_rows": 460030,
+    "test_rows": 63546,
+    "iterations": 641,
+    "seed": 42,
+    "seconds": 285.23974408699996,
+    "max_abs_test_score_difference": 1.5543122344752192e-15
+  },
+  "neural_smoke": {
+    "rows": 96,
+    "queries": 3,
+    "max_abs_logit_difference": 1.239776611328125e-05,
+    "ranks_identical": true,
+    "fusion_identical": true
+  },
+  "submission_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f",
+  "unit_tests": 40,
+  "sources_sha256": {
+    "data.py": "d2dc0e4f6474a7f29a0cbb879d7665de861ef8cddbebcd54c3658d4f6c93b159",
+    "experiments.py": "ee2c28e37286e6490dda8e179715574dce16a6bc945658f8ab23858fd46893a0",
+    "features.py": "1ea1971af7ba96edb6bd6c15efde65df7bc9f8477d02f6c63a4245d4fd46a469",
+    "fusion.py": "a6afaa711e1f36bf1b63dec01ad6edaf5d20723a8b9c8a905ec299e9de3ba263",
+    "neural.py": "5e62c804f7a95e3c6e64911935f0863235a983468b5ed07d299ec9d4052fa15a",
+    "pipeline.py": "6611b3e632343d980d9be2a3ebf2e38549cdcfb963fed92450501269e10a45a9",
+    "portability.py": "b0b0eb5a63aa240325c464fe35b47d80a06cc0e7ed0e01b2c38dee0c84e57e48",
+    "ranking.py": "601ddd05fd05e5d0bd263bbce06e7a2f3720c5bc0e098cc58e59d62758896711",
+    "solution.py": "3d24d470951965f04d9989b5385c5d04e97e118ac2643b2e3e864654d52f60ed",
+    "tests/test_features.py": "3519979642d92a91e65f499cdf63114fd4bf169f108b00e2b889693e75e1c796",
+    "tests/test_fusion.py": "0360a335d2bb20232381ac1596cbc37f4ad8903bcbc69f3ad10b8966031c7eb6",
+    "tests/test_neural.py": "b0f6719220ac424b65c0c61a40eb7dab048ac64dfc77d62d7c963b47f05ca0f7",
+    "tests/test_pipeline.py": "9140e717d77853d5242ce66bd5935b0eb1abbfcd2cae1d686df9bf9b7f6fe08b",
+    "tests/test_portability.py": "8a2059cbf8d171448267f29e9a2872ac6f44e29b4049ab37ede38c6007905298",
+    "tests/test_ranking.py": "ea927ba7747cb11b350f258449807ca6eacf85b64f7dad43330d81c61a42d22c"
+  },
+  "limitations": {
+    "raw_features_bitwise_equal": false,
+    "full_linux_test_neural_inference_tested": false,
+    "full_linux_cli_end_to_end_tested": false,
+    "x86_64_linux_tested": false,
+    "compatibility_guard_enforces_elementwise_numeric_tolerance": false
+  },
+  "retained_artifacts": {
+    "linux_feature_cache": ".build/linux-full-cache/features.npz",
+    "linux_document_database": ".build/linux-full-cache/documents.sqlite",
+    "linux_final_model": ".build/linux-refit-check/linux_fixed_component.cbm",
+    "linux_model_metadata": ".build/linux-refit-check/metadata.json",
+    "linux_real_neural_smoke": ".build/linux-refit-check/linux-neural-smoke.npz",
+    "production_cache_unchanged": true,
+    "sqlite_deleted": false
+  },
+  "evidence_files": [
+    "linux-full-features-runtime.json",
+    "linux-full-feature-comparison.json",
+    "linux-numeric-portability-probe.json",
+    "linux-refit-runtime.json",
+    "linux-refit-comparison.json",
+    "linux-fusion-comparison.json",
+    "linux-neural-smoke-runtime.json",
+    "linux-neural-smoke.json",
+    "linux-runtime-selection-portability.json",
+    "linux-model-reuse-check.json",
+    "linux-final-unit-tests-runtime.json",
+    "linux-final-unit-tests.log"
+  ]
+}

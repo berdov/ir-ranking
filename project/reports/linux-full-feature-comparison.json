@@ -1,0 +1,218 @@
+{
+  "scope": "Full corpus feature portability: independent Linux extraction versus existing macOS extraction; no model selection or holdout metrics",
+  "checks": {
+    "feature_names_equal": true,
+    "X_shape_equal": true,
+    "X_dtype_equal": true,
+    "labels_equal": true,
+    "labels_dtype_equal": true,
+    "query_ids_equal": true,
+    "query_ids_dtype_equal": true,
+    "doc_ids_equal": true,
+    "doc_ids_dtype_equal": true,
+    "object_ids_equal": true,
+    "object_ids_dtype_equal": true,
+    "is_train_equal": true,
+    "is_train_dtype_equal": true,
+    "X_bitwise_equal": false,
+    "corpus_statistics_equal": true,
+    "both_complete": true,
+    "split_sha256_equal": true,
+    "fit_selected_sha256_equal": false,
+    "tune_selected_sha256_equal": false
+  },
+  "success": false,
+  "shape": [
+    523576,
+    99
+  ],
+  "dtype": "float32",
+  "unequal_float32_elements": 28458,
+  "max_absolute_difference": 9.5367431640625e-07,
+  "columns_with_bitwise_differences": {
+    "lm_title_mu1500": 5489,
+    "lm_body_mu1500": 69,
+    "lm_url_mu1500": 22900
+  },
+  "first_differences": [
+    {
+      "row": 22,
+      "column": "lm_title_mu1500",
+      "mac": -0.00999001320451498,
+      "linux": -0.009990014135837555,
+      "mac_bits": 3156454695,
+      "linux_bits": 3156454696
+    },
+    {
+      "row": 33,
+      "column": "lm_url_mu1500",
+      "mac": -0.00999001320451498,
+      "linux": -0.009990014135837555,
+      "mac_bits": 3156454695,
+      "linux_bits": 3156454696
+    },
+    {
+      "row": 37,
+      "column": "lm_title_mu1500",
+      "mac": -0.00999001320451498,
+      "linux": -0.009990014135837555,
+      "mac_bits": 3156454695,
+      "linux_bits": 3156454696
+    },
+    {
+      "row": 39,
+      "column": "lm_title_mu1500",
+      "mac": -0.00999001320451498,
+      "linux": -0.009990014135837555,
+      "mac_bits": 3156454695,
+      "linux_bits": 3156454696
+    },
+    {
+      "row": 53,
+      "column": "lm_url_mu1500",
+      "mac": -0.003996005281805992,
+      "linux": -0.0039960057474672794,
+      "mac_bits": 3145920748,
+      "linux_bits": 3145920749
+    },
+    {
+      "row": 106,
+      "column": "lm_url_mu1500",
+      "mac": -0.011988015845417976,
+      "linux": -0.011988017708063126,
+      "mac_bits": 3158600034,
+      "linux_bits": 3158600036
+    },
+    {
+      "row": 189,
+      "column": "lm_url_mu1500",
+      "mac": -0.013986018486320972,
+      "linux": -0.013986020348966122,
+      "mac_bits": 3160745373,
+      "linux_bits": 3160745375
+    },
+    {
+      "row": 209,
+      "column": "lm_title_mu1500",
+      "mac": -0.007992010563611984,
+      "linux": -0.007992011494934559,
+      "mac_bits": 3154309356,
+      "linux_bits": 3154309357
+    },
+    {
+      "row": 212,
+      "column": "lm_url_mu1500",
+      "mac": -0.01798202469944954,
+      "linux": -0.01798202656209469,
+      "mac_bits": 3163770634,
+      "linux_bits": 3163770635
+    },
+    {
+      "row": 213,
+      "column": "lm_url_mu1500",
+      "mac": -0.01798202469944954,
+      "linux": -0.01798202656209469,
+      "mac_bits": 3163770634,
+      "linux_bits": 3163770635
+    },
+    {
+      "row": 232,
+      "column": "lm_title_mu1500",
+      "mac": -0.023976031690835953,
+      "linux": -0.02397603541612625,
+      "mac_bits": 3166988642,
+      "linux_bits": 3166988644
+    },
+    {
+      "row": 245,
+      "column": "lm_title_mu1500",
+      "mac": -0.023976031690835953,
+      "linux": -0.02397603541612625,
+      "mac_bits": 3166988642,
+      "linux_bits": 3166988644
+    },
+    {
+      "row": 288,
+      "column": "lm_url_mu1500",
+      "mac": -0.013986018486320972,
+      "linux": -0.013986020348966122,
+      "mac_bits": 3160745373,
+      "linux_bits": 3160745375
+    },
+    {
+      "row": 311,
+      "column": "lm_title_mu1500",
+      "mac": -0.01598402112722397,
+      "linux": -0.015984022989869118,
+      "mac_bits": 3162697964,
+      "linux_bits": 3162697965
+    },
+    {
+      "row": 332,
+      "column": "lm_title_mu1500",
+      "mac": -0.007992010563611984,
+      "linux": -0.007992011494934559,
+      "mac_bits": 3154309356,
+      "linux_bits": 3154309357
+    },
+    {
+      "row": 359,
+      "column": "lm_url_mu1500",
+      "mac": -0.00999001320451498,
+      "linux": -0.009990014135837555,
+      "mac_bits": 3156454695,
+      "linux_bits": 3156454696
+    },
+    {
+      "row": 369,
+      "column": "lm_url_mu1500",
+      "mac": -0.00999001320451498,
+      "linux": -0.009990014135837555,
+      "mac_bits": 3156454695,
+      "linux_bits": 3156454696
+    },
+    {
+      "row": 416,
+      "column": "lm_url_mu1500",
+      "mac": -0.001998002640902996,
+      "linux": -0.0019980028737336397,
+      "mac_bits": 3137532140,
+      "linux_bits": 3137532141
+    },
+    {
+      "row": 441,
+      "column": "lm_url_mu1500",
+      "mac": -0.005994007922708988,
+      "linux": -0.005994008854031563,
+      "mac_bits": 3150211426,
+      "linux_bits": 3150211428
+    },
+    {
+      "row": 448,
+      "column": "lm_url_mu1500",
+      "mac": -0.005994007922708988,
+      "linux": -0.005994008854031563,
+      "mac_bits": 3150211426,
+      "linux_bits": 3150211428
+    }
+  ],
+  "selected_training_hashes": {
+    "fit": {
+      "linux": "25a46dfb50454f0038170a7b04a91526658bf2caf4bd65c730a6a136895522a3",
+      "selected_mac": "0a575f846498702c3dda4a09ee10e1b7a6a2ff8cf1b71d9117fe32498e19c37b",
+      "equal": false
+    },
+    "tune": {
+      "linux": "bc69d83fb966422c5128017058525c9d94221b6d2a5e73a0b44631d3ef163ba6",
+      "selected_mac": "1734d0f4053add49585eaa5796e07ff03dce9419073b2fc94780fe48070f76cd",
+      "equal": false
+    }
+  },
+  "corpus_sha256": "4455c13557f8565d9c97fe31a17bee4cea6963c07b3623356398f307ff822826",
+  "mac_feature_seconds": 1317.058,
+  "linux_feature_seconds": 2028.068,
+  "comparison_seconds": 1.9506026250019204,
+  "mac_cache": "/Users/berdov/ir-ranking/i.berdov/project/cache/features.npz",
+  "linux_cache": "/Users/berdov/ir-ranking/i.berdov/project/.build/linux-full-cache/features.npz",
+  "metadata_bytes_not_compared": "Metadata contains runtime measurements and source file fingerprints; numeric inputs and semantic corpus statistics were compared separately."
+}

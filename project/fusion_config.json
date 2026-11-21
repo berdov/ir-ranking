@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "config": {
+    "neural_weight": 0.75,
+    "top_k": 0,
+    "entropy_threshold": 0.0,
+    "target_query_fraction_on_tune": 1.0
+  },
+  "neural": {
+    "model_id": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "revision": "1427fd652930e4ba29e8149678df786c240d8825",
+    "weights_sha256": "5daeca2481a76b5976a2bdc32f0a78532b6716da4f8cd3ff59460ef8d2f359b4",
+    "version": "query-window-v1",
+    "max_length": 256,
+    "window_words": 110,
+    "stride": 55,
+    "title_words": 40
+  },
+  "lexical_selection_sha256": "9332e17bf3c16b19f09d086e51d6bdcf452e779469b5a885d41812c5e177a942",
+  "split_sha256": "6c11833d7cec6c457a639027d24eb935c66ab67db217b8df925c2ebba4727d1f",
+  "selection_source": "training tune queries only"
+}

@@ -1,0 +1,8 @@
+{
+  "mode": "Full test cached replay, not a second cold training",
+  "rows": 63546,
+  "identical_csv_bytes": true,
+  "sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f",
+  "seconds": 4.949115833005635,
+  "offline": true
+}

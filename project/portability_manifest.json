@@ -1,0 +1,183 @@
+{
+  "format_version": 1,
+  "selection_sha256": "9332e17bf3c16b19f09d086e51d6bdcf452e779469b5a885d41812c5e177a942",
+  "original_partition_hashes": {
+    "fit_sha256": "0a575f846498702c3dda4a09ee10e1b7a6a2ff8cf1b71d9117fe32498e19c37b",
+    "tune_sha256": "1734d0f4053add49585eaa5796e07ff03dce9419073b2fc94780fe48070f76cd"
+  },
+  "provenance": {
+    "input_files": {
+      "vkmarco-docs.tsv": {
+        "size": 16758392268,
+        "sha256": "4455c13557f8565d9c97fe31a17bee4cea6963c07b3623356398f307ff822826"
+      },
+      "vkmarco-doctrain-queries.tsv": {
+        "size": 1100076,
+        "sha256": "0d1f6cf068a2637185bdaac34e754645af357170e5343484b59c213dbb6532fc"
+      },
+      "vkmarco-doctrain-qrels.tsv": {
+        "size": 9596216,
+        "sha256": "fa842d046036f37cb699afb08c75d223e09315aa780be1918e42595f67ff2032"
+      },
+      "vkmarco-doceval-queries.tsv": {
+        "size": 150731,
+        "sha256": "f58bfd769ffc3ccb203737bd1fe63de0b732e5ec2f7e9bb3f3717fbbe6c09a1e"
+      },
+      "objects.csv": {
+        "size": 1504791,
+        "sha256": "9d60d274ff45ef17fcb6dfe9324ace9223ddb8e64f333ffa5f3ee3605856cefe"
+      },
+      "sample_submission.csv": {
+        "size": 998596,
+        "sha256": "f6edbcbb04d31519242c9e5d9c6361245ff7ea556545910fc48a80325529b627"
+      }
+    },
+    "feature_schema_version": 1,
+    "feature_implementation_sha256": {
+      "data.py": "d2dc0e4f6474a7f29a0cbb879d7665de861ef8cddbebcd54c3658d4f6c93b159",
+      "features.py": "1ea1971af7ba96edb6bd6c15efde65df7bc9f8477d02f6c63a4245d4fd46a469"
+    },
+    "core_implementation_sha256": {
+      "ranking.py": "601ddd05fd05e5d0bd263bbce06e7a2f3720c5bc0e098cc58e59d62758896711",
+      "experiments.py": "ee2c28e37286e6490dda8e179715574dce16a6bc945658f8ab23858fd46893a0",
+      "fusion.py": "a6afaa711e1f36bf1b63dec01ad6edaf5d20723a8b9c8a905ec299e9de3ba263",
+      "neural.py": "5e62c804f7a95e3c6e64911935f0863235a983468b5ed07d299ec9d4052fa15a",
+      "pipeline.py": "6611b3e632343d980d9be2a3ebf2e38549cdcfb963fed92450501269e10a45a9"
+    },
+    "versions": {
+      "numpy": "2.5.5",
+      "PyStemmer": "3.1.0"
+    },
+    "feature_names": [
+      "title_raw_coverage",
+      "title_phrase",
+      "title_raw_phrase",
+      "title_bigram_coverage",
+      "title_proximity",
+      "title_first_match",
+      "title_last_match",
+      "body_raw_coverage",
+      "body_phrase",
+      "body_raw_phrase",
+      "body_bigram_coverage",
+      "body_proximity",
+      "body_first_match",
+      "body_last_match",
+      "url_raw_coverage",
+      "url_phrase",
+      "url_raw_phrase",
+      "url_bigram_coverage",
+      "url_proximity",
+      "url_first_match",
+      "url_last_match",
+      "url_char_length_log",
+      "hostname_length_log",
+      "url_path_depth",
+      "url_query_length_log",
+      "url_https",
+      "url_digit_count",
+      "url_has_query",
+      "url_path_length_log",
+      "title_char_length_log",
+      "body_char_length_log",
+      "query_raw_length",
+      "query_number_fraction",
+      "title_exact_query",
+      "title_query_char_overlap",
+      "query_term_count",
+      "query_idf_sum",
+      "query_idf_mean",
+      "query_oov_fraction",
+      "title_length",
+      "title_length_relative",
+      "title_coverage",
+      "title_all_terms",
+      "title_tf_sum_log",
+      "title_tf_idf",
+      "title_idf_coverage",
+      "title_tf_density",
+      "bm25_title",
+      "bm25_title_high_k",
+      "title_tf_min_log",
+      "title_tf_max_log",
+      "lm_title_mu300",
+      "lm_title_mu1500",
+      "body_length",
+      "body_length_relative",
+      "body_coverage",
+      "body_all_terms",
+      "body_tf_sum_log",
+      "body_tf_idf",
+      "body_idf_coverage",
+      "body_tf_density",
+      "bm25_body",
+      "bm25_body_high_k",
+      "body_tf_min_log",
+      "body_tf_max_log",
+      "lm_body_mu300",
+      "lm_body_mu1500",
+      "url_length",
+      "url_length_relative",
+      "url_coverage",
+      "url_all_terms",
+      "url_tf_sum_log",
+      "url_tf_idf",
+      "url_idf_coverage",
+      "url_tf_density",
+      "bm25_url",
+      "bm25_url_high_k",
+      "url_tf_min_log",
+      "url_tf_max_log",
+      "lm_url_mu300",
+      "lm_url_mu1500",
+      "bm25f_default",
+      "bm25f_k1p2_t2_u0p25_b0p6",
+      "bm25f_k1p2_t4_u0p25_b0p6",
+      "bm25f_k2_t2_u0p25_b0p6",
+      "bm25f_k2_t8_u0p25_b0p6",
+      "bm25f_k2_t4_u0_b0p6",
+      "bm25f_k2_t4_u1_b0p6",
+      "bm25f_k0p8_t4_u0p25_b0p6",
+      "bm25f_k3_t4_u0p25_b0p6",
+      "bm25f_k2_t4_u0p25_b0p3",
+      "bm25f_k2_t4_u0p25_b0p9",
+      "bm25f_k1p2_t1_u0_b0p75",
+      "bm25f_k2_t8_u1_b0p3",
+      "bm25_combined_k1p2_b0p6",
+      "bm25_combined_k2_b0p9",
+      "combined_idf_coverage",
+      "body_title_length_ratio",
+      "title_query_length_ratio"
+    ],
+    "matrix_shape": [
+      523576,
+      99
+    ],
+    "matrix_dtype": "float32",
+    "row_identity_sha256": {
+      "labels": "6deb9af186486147a261903067f60be378eab50ec5038878643313becdc2b908",
+      "query_ids": "d0ed52f9de4b1e1ed3e64764e6aab776c53bf22fed1a5dd7d3b6af9505956e57",
+      "doc_ids": "26a62e694f409e7ed1fc130a16db48740cb81b5e3d3c4f2ed79705eebbe0eeb7",
+      "object_ids": "25c12bcb3c86c64c34f30b466cf70cca4e95589c53881a347e47453f0666c484",
+      "is_train": "b74d494b97a898906c25da4dc0489097b6c4b89f525bb71af231d4d7b1e2232a"
+    },
+    "split_sha256": "6c11833d7cec6c457a639027d24eb935c66ab67db217b8df925c2ebba4727d1f",
+    "corpus_statistics": {
+      "documents": 1258656,
+      "candidate_documents": 513482,
+      "query_vocabulary_size": 24501,
+      "field_token_totals": {
+        "title": 11364857,
+        "body": 1181118096,
+        "url": 9272468
+      },
+      "field_average_lengths": {
+        "title": 9.029359094144866,
+        "body": 938.3962703073755,
+        "url": 7.366959677624386
+      }
+    }
+  },
+  "policy": "same verified inputs and implementation; platform float bytes may differ",
+  "manifest_sha256": "9b920c32b406441b59e4e247704890bbb762dffa58e33cfbfdbf4a3e5f69c84d"
+}

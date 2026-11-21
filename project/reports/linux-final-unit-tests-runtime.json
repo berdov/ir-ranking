@@ -1,0 +1,33 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 1.008998502000395,
+  "sampled_process_tree_peak_rss_bytes": 99676160,
+  "native_child_peak_rss_bytes": 158212096,
+  "rss_excludes_separate_gpu_memory": true,
+  "platform": "Linux-7.2.12-orbstack-00394-gbecdd6130068-aarch64-with-glibc2.41",
+  "machine": "aarch64",
+  "python": "3.12.16",
+  "docker_image": "sha256:d128e26cfba3fdecd83c95a69e1ac6beaa14af92c30420bcece88a2ac0550366",
+  "docker_container_state": {
+    "Status": "exited",
+    "ExitCode": 0,
+    "OOMKilled": false,
+    "StartedAt": "2026-11-21T14:01:10.145493095Z",
+    "FinishedAt": "2026-11-21T14:01:11.349428638Z"
+  },
+  "container_limits": {
+    "memory_bytes": 3000000000,
+    "memory_swap_bytes": 3000000000,
+    "nano_cpus": 2000000000,
+    "network_mode": "none"
+  }
+}

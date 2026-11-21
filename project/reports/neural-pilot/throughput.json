@@ -1,0 +1,39 @@
+{
+  "model_revision": "1427fd652930e4ba29e8149678df786c240d8825",
+  "max_length": 256,
+  "window_words": 110,
+  "title_words": 40,
+  "samples": 128,
+  "timings": [
+    {
+      "device": "mps",
+      "batch_size": 16,
+      "pairs": 128,
+      "seconds": 1.0856707920029294,
+      "pairs_per_second": 117.89945989415051,
+      "load_seconds": 12.119019417004893,
+      "score_min": -10.05087661743164,
+      "score_max": 10.905484199523926
+    },
+    {
+      "device": "mps",
+      "batch_size": 32,
+      "pairs": 128,
+      "seconds": 0.6478988749877317,
+      "pairs_per_second": 197.56169510623667,
+      "load_seconds": 0.5432505409989972,
+      "score_min": -10.05087661743164,
+      "score_max": 10.905484199523926
+    },
+    {
+      "device": "cpu",
+      "batch_size": 16,
+      "pairs": 64,
+      "seconds": 1.1428288339957362,
+      "pairs_per_second": 56.001387168569444,
+      "load_seconds": 0.43646304101275746,
+      "score_min": -10.05087947845459,
+      "score_max": 10.905484199523926
+    }
+  ]
+}

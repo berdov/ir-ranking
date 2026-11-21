@@ -1,0 +1,13 @@
+{
+  "stage": "local_complete_ready_for_kaggle",
+  "submission_validated": true,
+  "download_csv": "/Users/berdov/Downloads/ir_project_submission.csv",
+  "submission_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f",
+  "holdout_ndcg": 0.641918783137166,
+  "method_and_hyperparameters_frozen": true,
+  "linux_portability_passed": true,
+  "unit_tests_mac": 40,
+  "unit_tests_linux": 40,
+  "awaiting_kaggle_public_score": true,
+  "lms_submission_confirmed": false
+}

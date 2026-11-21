@@ -1,0 +1,6 @@
+{
+  "fusion_freeze_sha256": "4adc7e231f65759b937320b92be4227ddbe448e31233f9159c941218bf0562ef",
+  "fusion_config_sha256": "4e26a774bc5709ac907fdba07b78f4a0bcc906b136965dd8721d697d91dae77f",
+  "lexical_selection_sha256": "9332e17bf3c16b19f09d086e51d6bdcf452e779469b5a885d41812c5e177a942",
+  "policy": "final holdout is report-only; no further tuning"
+}

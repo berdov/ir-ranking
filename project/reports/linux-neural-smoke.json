@@ -1,0 +1,72 @@
+{
+  "scope": "REAL Linux CPU inference only on the first 3 complete test query groups; no train/test relevance labels read, no model selection",
+  "query_ids": [
+    "test:50",
+    "test:67",
+    "test:218"
+  ],
+  "rows": 96,
+  "batch_size": 16,
+  "threads": 4,
+  "max_abs_logit_difference": 1.239776611328125e-05,
+  "mean_abs_logit_difference": 2.952059730887413e-06,
+  "scores_bitwise_equal": false,
+  "neural_ranks_identical": true,
+  "seconds": 19.470873901999767,
+  "neural_metadata": {
+    "signature": "bbf35b6dd9c99b4302018009e388903d91b740f1e9306ee204aeb35e9a597eab",
+    "model": {
+      "model_id": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "revision": "1427fd652930e4ba29e8149678df786c240d8825",
+      "license": "Apache-2.0",
+      "files_sha256": {
+        "config.json": "cc2cfe51aa3fd759d21d21acf5dfd6994aa67a3c9210636d22e143699d336c77",
+        "model.safetensors": "5daeca2481a76b5976a2bdc32f0a78532b6716da4f8cd3ff59460ef8d2f359b4",
+        "tokenizer_config.json": "e7fbfbfa6347b4e414c1cee50d142e2c2f9a895dad68b068ae83a8b564c3837e",
+        "special_tokens_map.json": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d",
+        "tokenizer.json": "62c24cdc13d4c9952d63718d6c9fa4c287974249e16b7ade6d5a85e7bbb75626",
+        "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+      },
+      "pretraining_provenance": "Author reports multilingual machine-translated MS MARCO; not fitted here"
+    },
+    "source": {
+      "database_size": 7267889152,
+      "database_mtime_ns": 1795269012225722234,
+      "pair_fingerprint": "bab85515923161a9735872636f9a37d60697b6d83976037b9ee07ad0d2ee7b3d"
+    },
+    "config": {
+      "version": "query-window-v1",
+      "implementation_sha256": "5e62c804f7a95e3c6e64911935f0863235a983468b5ed07d299ec9d4052fa15a",
+      "max_length": 256,
+      "window_words": 110,
+      "stride": 55,
+      "title_words": 40,
+      "query_token_cap": 64,
+      "device": "cpu",
+      "precision": "float32",
+      "batch_size": 16,
+      "passage": "title followed by one query-stem coverage body window"
+    },
+    "requested_rows": 96,
+    "requested_rows_sha256": "89bec042b172bd3f39b6cc1b73dc1d6529d1510473e799fe9777b3aaacca8e65",
+    "runs": [
+      {
+        "rows": 96,
+        "seconds": 18.839632754000377,
+        "pairs_per_second": 5.095640730025139
+      }
+    ],
+    "computed_rows": 96,
+    "requested_complete": true,
+    "latest_run": {
+      "rows": 96,
+      "seconds": 18.837291290000394,
+      "pairs_per_second": 5.096274115109147
+    }
+  },
+  "comparison": "Existing Mac CPU batch16 full test cache versus new Linux CPU batch16 scores; same weights/preprocessing/max_length/window/stride/title",
+  "full_test_linux_neural_inference_tested": false,
+  "linux_refit_and_real_linux_neural_fusion_matches_mac_submission": true,
+  "fusion_different_rows": 0,
+  "success": true
+}

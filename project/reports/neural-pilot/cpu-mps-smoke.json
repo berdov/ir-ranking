@@ -1,0 +1,21 @@
+{
+  "pairs": 32,
+  "query_groups_compared": 3,
+  "mps_cpu_max_abs_difference": 5.7220458984375e-06,
+  "query_rankings_equal": true,
+  "resume_bytewise_scores_equal": true,
+  "mps_end_to_end": [
+    {
+      "rows": 32,
+      "seconds": 4.255198332990403,
+      "pairs_per_second": 7.520213512001338
+    }
+  ],
+  "cpu_end_to_end": [
+    {
+      "rows": 32,
+      "seconds": 1.1599609999975655,
+      "pairs_per_second": 27.587134395093592
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "purpose": "Post-hoc qualitative examples from the frozen final holdout; no tuning or model changes",
+  "selection_policy": "Manual purposive selection of three ordinary neutral queries after the final audit: clear gain over both lexical methods, failure below both, and an improvement over LTR below BM25F. These examples are not a random or representative sample.",
+  "metric": {
+    "name": "nDCG@10",
+    "gain": "2**label - 1",
+    "discount": "1/log2(rank+1)",
+    "aggregation": "equal weight per query",
+    "zero_idcg": 0,
+    "training_ties": "lexicographic DocumentId"
+  },
+  "metric_note": "nDCG@10 uses the complete top 10; only top 3 are displayed for readability. Labels are copied from official competition qrels, not reassessed here.",
+  "limitations": "These selected cases neither estimate error frequency nor identify causal mechanisms. Overall quality and uncertainty must be assessed on all holdout queries.",
+  "source_files_sha256": {
+    "final-holdout.json": "592f9c54020d430a4f44a3936fd501af6784f3c256f8d8d6832d9142a416c4e5",
+    "final-holdout-predictions.npz": "1527ff92af410f97352b6013a3ba62210060a4a8a56c0edac1215f06ed8de320"
+  },
+  "fusion_freeze_sha256": "4adc7e231f65759b937320b92be4227ddbe448e31233f9159c941218bf0562ef",
+  "fusion_config_sha256": "4e26a774bc5709ac907fdba07b78f4a0bcc906b136965dd8721d697d91dae77f",
+  "split_sha256": "6c11833d7cec6c457a639027d24eb935c66ab67db217b8df925c2ebba4727d1f",
+  "models": {
+    "bm25f": "BM25F",
+    "ltr": "CatBoost LTR",
+    "final": "Итоговая комбинация"
+  },
+  "cases": [
+    {
+      "kind": "gain",
+      "heading": "Выигрыш: сохранено условие о числе букв",
+      "query_id": "train:35553",
+      "query": "франт щёголь 9 букв",
+      "candidate_count": 35,
+      "ndcg10": {
+        "bm25f": 0.2573132348933071,
+        "ltr": 0.4122003726249503,
+        "final": 0.9178840475132491
+      },
+      "top3": {
+        "bm25f": [
+          {
+            "rank": 1,
+            "doc_id": "D001017502",
+            "label": 1,
+            "title": "Щеголь, Франт 5 Букв - ответ на кроссворд и сканворд",
+            "url": "krossvordskanvord.com/shegol-frant-5-bukv",
+            "snippet": "букв Франт, щеголь 5 букв Франт, щеголь (устар.) Щеголь, франт (первоначально изысканно одетый светский человек) Щеголь, вертопрах, франт, модник Пустой щеголь, франт 3 буквы Франт и щёголь или старая \"\"ф\"\" 4 буквы Франт, щеголь (устар Франт и щеголь буквы Щег…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              157,
+              267
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001017514",
+            "label": 1,
+            "title": "Щеголь, франт 5 букв первая Д",
+            "url": "wordparts.ru/scanword/9820/%D0%A9%D0%B5%D0%B3%D0%BE%D0%BB%D1%8C,%20%D1%84%D1%80%D0%B0%D0%BD%D1%82",
+            "snippet": "Щеголь, франт - Денди. Ответы на кроссворды и сканворды 5 букв \"Щеголь, франт 5 букв Ответ на сканворд Денди Щеголь, франт 5 букв Слово из 5 букв на букву Д, вторая буква Е, третья буква Н, четвертая буква Д, последняя буква И пустой франт обычно франт славный…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001017526",
+            "label": 2,
+            "title": "Франт, щёголь. ☆ 5 букв ☆ Сканворд",
+            "url": "pole-chudes-otvet.ru/frant-shhyogol",
+            "snippet": "Ответ на вопрос: «Франт, щёголь.» ➣ Слово состоит из 5 букв ➣ Поиск среди 775 тысяч вопросов Toggle navigation Поиск Главная Франт, щёголь. Франт, щёголь. Вопрос: Франт, щёголь. Денди Щёголь из Англии. «Как ... лондонский одет. И наконец увидел свет» (Пушкин).…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              109
+            ]
+          }
+        ],
+        "ltr": [
+          {
+            "rank": 1,
+            "doc_id": "D001017514",
+            "label": 1,
+            "title": "Щеголь, франт 5 букв первая Д",
+            "url": "wordparts.ru/scanword/9820/%D0%A9%D0%B5%D0%B3%D0%BE%D0%BB%D1%8C,%20%D1%84%D1%80%D0%B0%D0%BD%D1%82",
+            "snippet": "Щеголь, франт - Денди. Ответы на кроссворды и сканворды 5 букв \"Щеголь, франт 5 букв Ответ на сканворд Денди Щеголь, франт 5 букв Слово из 5 букв на букву Д, вторая буква Е, третья буква Н, четвертая буква Д, последняя буква И пустой франт обычно франт славный…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001017502",
+            "label": 1,
+            "title": "Щеголь, Франт 5 Букв - ответ на кроссворд и сканворд",
+            "url": "krossvordskanvord.com/shegol-frant-5-bukv",
+            "snippet": "букв Франт, щеголь 5 букв Франт, щеголь (устар.) Щеголь, франт (первоначально изысканно одетый светский человек) Щеголь, вертопрах, франт, модник Пустой щеголь, франт 3 буквы Франт и щёголь или старая \"\"ф\"\" 4 буквы Франт, щеголь (устар Франт и щеголь буквы Щег…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              157,
+              267
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001017505",
+            "label": 0,
+            "title": "ЩЕГОЛЬ ФРАНТ 5 БУКВ КРОССВОРД - СЛОВО",
+            "url": "krossword.zzz.com.ua/967.html",
+            "snippet": "ЩЕГОЛЬ ФРАНТ 5 БУКВ КРОССВОРД - СЛОВО 2019.06.24 ЩЕГОЛЬ ФРАНТ 5 БУКВ КРОССВОРД - СЛОВО 2019-06-24 07:43 ЩЕГОЛЬ ФРАНТ 5 БУКВ КРОССВОРД - СЛОВО ХОРОШО ЗНАКОМОЕ ИТАЛЬЯНЦАМ АВТО КРОССВОРД 8 БУКВ - СЛОВО ГРЕЧЕСКАЯ БУКВА КРОССВОРД 4 БУКВЫ - СЛОВО МЕЛОДИЧНЫЙ ОБОРОТ В…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          }
+        ],
+        "final": [
+          {
+            "rank": 1,
+            "doc_id": "D001017496",
+            "label": 3,
+            "title": "Франт, Щеголь (ирон.) , 9 букв",
+            "url": "search-word.ru/word/krasavchik",
+            "snippet": "Франт, Щеголь (ирон.) , 9 букв | помощник сканвордиста, кроссвордиста | Ответы на сканворды, кроссворды к р а с а в ч и к • франт, щеголь (ирон.) • миленький юноша • отнюдь не уродливый мужчина • писаный Аполлон • роль А. Соловьева в фильме «Зеленый фургон» • …",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              47
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001017495",
+            "label": 2,
+            "title": "Франт щеголь (*********) 9 букв - поиск слов по маске и определению, ответы на сканворды",
+            "url": "loopy.ru/?def=%D1%84%D1%80%D0%B0%D0%BD%D1%82%20%D1%89%D0%B5%D0%B3%D0%BE%D0%BB%D1%8C&word=*********",
+            "snippet": "Поиск по определению франт щеголь, поиск по маске *********, помощник кроссвордиста, разгадывание сканвордов и кроссвордов онлайн, словарь кроссвордиста Слов: 157 756 (+29 196) Значений: 784 428 (+74 250) Франт щеголь (*********) : по маске 9 букв Всего найден…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              66
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001017527",
+            "label": 3,
+            "title": "Франт, щеголь (ирон.), 9 (девять) букв - Кроссворды и сканворды",
+            "url": "xn--b1algemdcsb.xn--p1ai/crossword/1235939",
+            "snippet": "Франт, щеголь (ирон.). Первая буква к. Последняя буква к. \"Поиск ответов на кроссворды и сканворды Франт, щеголь (ирон.) Ответ на вопрос \"\"Франт, щеголь (ирон.) \"\", 9 (девять) букв: красавчик Альтернативные вопросы в кроссвордах для слова красавчик Роль А. Сол…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          }
+        ]
+      },
+      "focus_document": {
+        "doc_id": "D001017496",
+        "positions": {
+          "bm25f": 15,
+          "ltr": 10,
+          "final": 1
+        },
+        "rank": 1,
+        "label": 3,
+        "title": "Франт, Щеголь (ирон.) , 9 букв",
+        "url": "search-word.ru/word/krasavchik",
+        "snippet": "Франт, Щеголь (ирон.) , 9 букв | помощник сканвордиста, кроссвордиста | Ответы на сканворды, кроссворды к р а с а в ч и к • франт, щеголь (ирон.) • миленький юноша • отнюдь не уродливый мужчина • писаный Аполлон • роль А. Соловьева в фильме «Зеленый фургон» • …",
+        "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+        "body_window_word_offsets": [
+          0,
+          47
+        ]
+      },
+      "observation": "В top-3 BM25F и LTR преобладают страницы об ответах на 5 букв. Итоговая комбинация выводит три страницы, в заголовках которых явно указаны 9 букв; их Labels — 3, 2, 3. Это наблюдаемое соответствие ограничению запроса в данном списке, а не доказательство общего умения нейросети понимать числовые условия.",
+      "deltas": {
+        "final_minus_bm25f": 0.6605708126199421,
+        "final_minus_ltr": 0.5056836748882989
+      }
+    },
+    {
+      "kind": "error",
+      "heading": "Ошибка: документ другой темы вверху выдачи",
+      "query_id": "train:39526",
+      "query": "нахождение ошибок в английском тексте",
+      "candidate_count": 44,
+      "ndcg10": {
+        "bm25f": 0.5095453426341289,
+        "ltr": 0.621135938075429,
+        "final": 0.3172958568424787
+      },
+      "top3": {
+        "bm25f": [
+          {
+            "rank": 1,
+            "doc_id": "D001148672",
+            "label": 2,
+            "title": "Программа для нахождения ошибок в тексте",
+            "url": "rufus-rus.ru/programma-dlja-nahozhdenija-oshibok-v-tekste",
+            "snippet": "Описание Сервис позволяет бесплатно проверить онлайн орфографию, грамматику и частично пунктуацию текстов. Вероятные ошибки в тексте выделяются цветом. Программа для нахождения ошибок в тексте 1 Описание 2 Как научиться писать грамотно 3 Лучшие инструменты для…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001148679",
+            "label": 1,
+            "title": "Английский язык: Тест на нахождение ошибок и исправление их. Помогите,будьте добры. Не представляю,как это...",
+            "url": "a-otvet.ru/5122704",
+            "snippet": "Тест на нахождение ошибок и исправление их. Помогите,будьте добры. Не представляю,как это делать вообще, а сдавать завтра( Вход Запомнить Регистрация Задать вопрос Английский язык Тест на нахождение ошибок и исправление их. Помогите,будьте добры. Не представля…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001148673",
+            "label": 1,
+            "title": "Нахождение - ошибка - Большая Энциклопедия Нефти и Газа, статья, страница 3",
+            "url": "ngpedia.ru/id181387p3.html",
+            "snippet": "нулю; за энергию диссоциации при этом принимается площадь, заключенная между кривой и осью абсцисс. Преимуществом такого метода вычисления является простота оценки возможной ошибки, тогда как при более сложных методах экстраполяции многочисленные математически…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              275,
+              385
+            ]
+          }
+        ],
+        "ltr": [
+          {
+            "rank": 1,
+            "doc_id": "D001148672",
+            "label": 2,
+            "title": "Программа для нахождения ошибок в тексте",
+            "url": "rufus-rus.ru/programma-dlja-nahozhdenija-oshibok-v-tekste",
+            "snippet": "Описание Сервис позволяет бесплатно проверить онлайн орфографию, грамматику и частично пунктуацию текстов. Вероятные ошибки в тексте выделяются цветом. Программа для нахождения ошибок в тексте 1 Описание 2 Как научиться писать грамотно 3 Лучшие инструменты для…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001148666",
+            "label": 1,
+            "title": "Ошибки в английском языке - проверка английского текста на ошибки",
+            "url": "lim-english.com/posts/tipichnie-oshibki-v-angliiskom-yazike",
+            "snippet": "Подробное описание типичных ошибок в английском языке. Статья поможет вам избежать ошибок перевода с английского на русский. В качестве упражнения Вы можете проверить английский текст на ошибки и исправить их. \"Типичные ошибки в английском языке Типичные ошибк…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001148646",
+            "label": 2,
+            "title": "Как проверить текст на английском языке : редактура и корректура",
+            "url": "lhlib.ru/kak-ne-okazatsya-sozdatelem-firmy-bryu",
+            "snippet": "научные статьи, эти ссылки вам могут очень пригодиться, добавьте этот пост в избранное или к себе на стену :) 1. Grammarly – быстрая проверка текстов http://www.grammarly.com/ – автоматическая проверка орфографии, пунктуации, стилистических ошибок онлайн (англ…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              165,
+              275
+            ]
+          }
+        ],
+        "final": [
+          {
+            "rank": 1,
+            "doc_id": "D001148673",
+            "label": 1,
+            "title": "Нахождение - ошибка - Большая Энциклопедия Нефти и Газа, статья, страница 3",
+            "url": "ngpedia.ru/id181387p3.html",
+            "snippet": "нулю; за энергию диссоциации при этом принимается площадь, заключенная между кривой и осью абсцисс. Преимуществом такого метода вычисления является простота оценки возможной ошибки, тогда как при более сложных методах экстраполяции многочисленные математически…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              275,
+              385
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001148666",
+            "label": 1,
+            "title": "Ошибки в английском языке - проверка английского текста на ошибки",
+            "url": "lim-english.com/posts/tipichnie-oshibki-v-angliiskom-yazike",
+            "snippet": "Подробное описание типичных ошибок в английском языке. Статья поможет вам избежать ошибок перевода с английского на русский. В качестве упражнения Вы можете проверить английский текст на ошибки и исправить их. \"Типичные ошибки в английском языке Типичные ошибк…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001148667",
+            "label": 2,
+            "title": "Исправление своих ошибок в английском языке",
+            "url": "english-and-skype.com/ispravlenie-oshibok-anglijskom-yazyke.html",
+            "snippet": "еще нужно поработать, если самостоятельно вам не удалось определить все ошибки. Решайте специальные задания и тесты Различные упражнения вы можете найти в Интернете на специальных сайтах. Желательно время от времени выполнять онлайн-тесты на исправление ошибок…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              275,
+              385
+            ]
+          }
+        ]
+      },
+      "focus_document": {
+        "doc_id": "D001148673",
+        "positions": {
+          "bm25f": 3,
+          "ltr": 15,
+          "final": 1
+        },
+        "rank": 1,
+        "label": 1,
+        "title": "Нахождение - ошибка - Большая Энциклопедия Нефти и Газа, статья, страница 3",
+        "url": "ngpedia.ru/id181387p3.html",
+        "snippet": "нулю; за энергию диссоциации при этом принимается площадь, заключенная между кривой и осью абсцисс. Преимуществом такого метода вычисления является простота оценки возможной ошибки, тогда как при более сложных методах экстраполяции многочисленные математически…",
+        "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+        "body_window_word_offsets": [
+          275,
+          385
+        ]
+      },
+      "observation": "Итоговая комбинация ставит первой страницу «Нахождение — ошибка» из энциклопедии нефти и газа с Label=1. У LTR первой была страница о программе поиска ошибок с Label=2, а третьей — о проверке английского текста с Label=2. На этом запросе итоговое nDCG@10 ниже обеих лексических оценок; один пример не устанавливает, связана ли ошибка с окном текста, моделью или способом смешивания.",
+      "deltas": {
+        "final_minus_bm25f": -0.1922494857916502,
+        "final_minus_ltr": -0.3038400812329503
+      }
+    },
+    {
+      "kind": "mixed",
+      "heading": "Смешанный случай: лучше LTR, слабее BM25F",
+      "query_id": "train:42243",
+      "query": "развивающие игры составляем слова",
+      "candidate_count": 34,
+      "ndcg10": {
+        "bm25f": 0.632171895310184,
+        "ltr": 0.3049581046553731,
+        "final": 0.5706047940893568
+      },
+      "top3": {
+        "bm25f": [
+          {
+            "rank": 1,
+            "doc_id": "D001240756",
+            "label": 3,
+            "title": "Развивающая игра «Читаем и составляем слова»",
+            "url": "nashideto4ki.ru/12446-razvivayuschaya-igra-chitaem-i-sostavlyaem-slova.html",
+            "snippet": "Ведущий показывает по очереди карточки с предметами, ребенок читает слова на своей карточке и подбирает к слову соответс­твующую картинку, выкладывая ее рядом со словом. » Развивающая игра «Читаем и составляем слова» Развивающая игра «Читаем и составляем слова…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001240750",
+            "label": 2,
+            "title": "Читаем и составляем слова. Развивающая игра | Игры на любой вкус | Досуг и творчество детей | Детям и родителям | Список источников",
+            "url": "spisok-literaturi.ru/books/chitaem-i-sostavlyaem-slova-razvivayuschaya-igra_23942235.html",
+            "snippet": "вам занимательную игру для детей дошкольного возраста, занимаясь по которой дети смогут потренироваться в составлении и чтении различных слов. Кроме того, игра поможет детям ассоциировать слова с предметами, а также развивать внимание, зрительное восприятие, р…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              55,
+              165
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001240753",
+            "label": 1,
+            "title": "Игра Составляем Слова - Игры для девочек",
+            "url": "igrydlyadevochek.org/igra-sostavlyaem-slova",
+            "snippet": "Каждому ребенку понравится увлекательная игра Составляем Слова. Ее суть достаточно простая, но оформление и качество превосходит все ожидания. Давайте внимательно посмотрим на задания, которые предлагает автор игры для девочек. Судя по названию, можно предполо…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          }
+        ],
+        "ltr": [
+          {
+            "rank": 1,
+            "doc_id": "D001240757",
+            "label": 1,
+            "title": "Игра Составляем слова - играть онлайн бесплатно",
+            "url": "gsflash.ru/game/igra-sostavljaem-slova",
+            "snippet": "Интересная развивающая игра на русском языке, которая поможет детям научиться писать и читать. Угадывайте слово и составляйте его по буквам. \"Игра \"\"Составляем слова\"\" Игры Развивающие ›› Игра Составляем слова Рейтинг игры: 4.51 очков Количество оценок: 1046 О…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001240753",
+            "label": 1,
+            "title": "Игра Составляем Слова - Игры для девочек",
+            "url": "igrydlyadevochek.org/igra-sostavlyaem-slova",
+            "snippet": "Каждому ребенку понравится увлекательная игра Составляем Слова. Ее суть достаточно простая, но оформление и качество превосходит все ожидания. Давайте внимательно посмотрим на задания, которые предлагает автор игры для девочек. Судя по названию, можно предполо…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001240754",
+            "label": 2,
+            "title": "Составляем слова - играть бесплатно онлайн",
+            "url": "fynsy.ru/game/sostavlyaem-slova",
+            "snippet": "Приветствуем вас на игровом портале Fynsy.ru! У нас вы найдёте самые добрые, весёлые, яркие и красочные бесплатные игры для девочек. Мы считаем, что процесс игры должен быть не только забавным видом досуга ребёнка, но также развивать и обучать, а значит, прино…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          }
+        ],
+        "final": [
+          {
+            "rank": 1,
+            "doc_id": "D001240757",
+            "label": 1,
+            "title": "Игра Составляем слова - играть онлайн бесплатно",
+            "url": "gsflash.ru/game/igra-sostavljaem-slova",
+            "snippet": "Интересная развивающая игра на русском языке, которая поможет детям научиться писать и читать. Угадывайте слово и составляйте его по буквам. \"Игра \"\"Составляем слова\"\" Игры Развивающие ›› Игра Составляем слова Рейтинг игры: 4.51 очков Количество оценок: 1046 О…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 2,
+            "doc_id": "D001240756",
+            "label": 3,
+            "title": "Развивающая игра «Читаем и составляем слова»",
+            "url": "nashideto4ki.ru/12446-razvivayuschaya-igra-chitaem-i-sostavlyaem-slova.html",
+            "snippet": "Ведущий показывает по очереди карточки с предметами, ребенок читает слова на своей карточке и подбирает к слову соответс­твующую картинку, выкладывая ее рядом со словом. » Развивающая игра «Читаем и составляем слова» Развивающая игра «Читаем и составляем слова…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              0,
+              110
+            ]
+          },
+          {
+            "rank": 3,
+            "doc_id": "D001240750",
+            "label": 2,
+            "title": "Читаем и составляем слова. Развивающая игра | Игры на любой вкус | Досуг и творчество детей | Детям и родителям | Список источников",
+            "url": "spisok-literaturi.ru/books/chitaem-i-sostavlyaem-slova-razvivayuschaya-igra_23942235.html",
+            "snippet": "вам занимательную игру для детей дошкольного возраста, занимаясь по которой дети смогут потренироваться в составлении и чтении различных слов. Кроме того, игра поможет детям ассоциировать слова с предметами, а также развивать внимание, зрительное восприятие, р…",
+            "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+            "body_window_word_offsets": [
+              55,
+              165
+            ]
+          }
+        ]
+      },
+      "focus_document": {
+        "doc_id": "D001240756",
+        "positions": {
+          "bm25f": 1,
+          "ltr": 9,
+          "final": 2
+        },
+        "rank": 2,
+        "label": 3,
+        "title": "Развивающая игра «Читаем и составляем слова»",
+        "url": "nashideto4ki.ru/12446-razvivayuschaya-igra-chitaem-i-sostavlyaem-slova.html",
+        "snippet": "Ведущий показывает по очереди карточки с предметами, ребенок читает слова на своей карточке и подбирает к слову соответс­твующую картинку, выкладывая ее рядом со словом. » Развивающая игра «Читаем и составляем слова» Развивающая игра «Читаем и составляем слова…",
+        "snippet_origin": "First 260 characters of the deterministic body window used by neural.make_passage, whitespace collapsed",
+        "body_window_word_offsets": [
+          0,
+          110
+        ]
+      },
+      "observation": "Итоговая комбинация возвращает страницу «Читаем и составляем слова» с Label=3 на второе место, но первой оставляет онлайн-игру с Label=1. BM25F ставит документ с Label=3 первым. Итог лучше LTR по nDCG@10, однако не достигает результата BM25F; улучшение относительно обученной модели не означает улучшения относительно каждого бейзлайна.",
+      "deltas": {
+        "final_minus_bm25f": -0.0615671012208272,
+        "final_minus_ltr": 0.26564668943398373
+      }
+    }
+  ]
+}

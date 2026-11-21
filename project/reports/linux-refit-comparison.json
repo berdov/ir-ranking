@@ -1,0 +1,42 @@
+{
+  "scope": "Fixed selected CatBoost refit on all Linux-extracted training features; test prediction portability only, no model selection/holdout metrics",
+  "iterations": 641,
+  "seed": 42,
+  "threads": 4,
+  "train_rows": 460030,
+  "test_rows": 63546,
+  "train_seconds": 285.23974408699996,
+  "seconds": 289.25532119999934,
+  "linux_selection_hashes": {
+    "fit": "25a46dfb50454f0038170a7b04a91526658bf2caf4bd65c730a6a136895522a3",
+    "tune": "bc69d83fb966422c5128017058525c9d94221b6d2a5e73a0b44631d3ef163ba6"
+  },
+  "linux_refit_vs_mac_model_same_linux_features": {
+    "scores_bitwise_equal": false,
+    "max_absolute_score_difference": 1.5543122344752192e-15,
+    "mean_absolute_score_difference": 1.200449747274527e-16,
+    "ranking_identical": true,
+    "differing_order_positions": 0,
+    "queries_with_different_order": 0,
+    "allclose_rtol1e-6_atol1e-6": true
+  },
+  "linux_refit_linux_features_vs_mac_model_mac_features": {
+    "scores_bitwise_equal": false,
+    "max_absolute_score_difference": 1.5543122344752192e-15,
+    "mean_absolute_score_difference": 1.200449747274527e-16,
+    "ranking_identical": true,
+    "differing_order_positions": 0,
+    "queries_with_different_order": 0,
+    "allclose_rtol1e-6_atol1e-6": true
+  },
+  "mac_model_linux_features_vs_mac_features": {
+    "scores_bitwise_equal": true,
+    "max_absolute_score_difference": 0.0,
+    "mean_absolute_score_difference": 0.0,
+    "ranking_identical": true,
+    "differing_order_positions": 0,
+    "queries_with_different_order": 0,
+    "allclose_rtol1e-6_atol1e-6": true
+  },
+  "model_file": "linux_fixed_component.cbm"
+}

@@ -1,0 +1,29 @@
+{
+  "manifest_sha256": "9b920c32b406441b59e4e247704890bbb762dffa58e33cfbfdbf4a3e5f69c84d",
+  "original_selection_sha256": "9332e17bf3c16b19f09d086e51d6bdcf452e779469b5a885d41812c5e177a942",
+  "runtime_selection_sha256": "d02901b4c486dccc174ca50ffbe799955bcd46c7eef6d80a8fa136c84a98f0fb",
+  "adapted": true,
+  "changed_fields": [
+    "fit_sha256",
+    "tune_sha256"
+  ],
+  "original_partition_hashes": {
+    "fit_sha256": "0a575f846498702c3dda4a09ee10e1b7a6a2ff8cf1b71d9117fe32498e19c37b",
+    "tune_sha256": "1734d0f4053add49585eaa5796e07ff03dce9419073b2fc94780fe48070f76cd"
+  },
+  "runtime_partition_hashes": {
+    "fit_sha256": "25a46dfb50454f0038170a7b04a91526658bf2caf4bd65c730a6a136895522a3",
+    "tune_sha256": "bc69d83fb966422c5128017058525c9d94221b6d2a5e73a0b44631d3ef163ba6"
+  },
+  "provenance_verified": true,
+  "tuning_performed": false,
+  "validation_policy": "same verified inputs and implementation; platform float bytes may differ",
+  "numerical_tolerance_checked": false,
+  "corpus_validation": "full SHA-256 recorded during extraction; current size/mtime/edges revalidated",
+  "platform": "Linux",
+  "independently_verified_changed_fields": [
+    "fit_sha256",
+    "tune_sha256"
+  ],
+  "success": true
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "features.py",
+    "--data_dir",
+    "/Users/berdov/ir-ranking/data/project",
+    "--cache_dir",
+    "cache"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 1323.663566541989,
+  "sampled_process_tree_peak_rss_bytes": 1297793024,
+  "native_child_peak_rss_bytes": 1300660224,
+  "rss_excludes_separate_gpu_memory": true,
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.12.3"
+}

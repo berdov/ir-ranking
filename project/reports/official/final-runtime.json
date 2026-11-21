@@ -1,0 +1,28 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "solution.py",
+    "--submission_file",
+    "reports/official/submission.csv",
+    "--report_file",
+    "reports/official/submission-run.json",
+    "--neural_model_dir",
+    "/Users/berdov/ir-ranking/models/mmarco-miniLM",
+    "--device",
+    "cpu",
+    "--batch_size",
+    "16",
+    "--threads",
+    "4",
+    "/Users/berdov/ir-ranking/data/project"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 1767.826781583004,
+  "sampled_process_tree_peak_rss_bytes": 1610366976,
+  "native_child_peak_rss_bytes": 1651949568,
+  "rss_excludes_separate_gpu_memory": true,
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.12.3"
+}

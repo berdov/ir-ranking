@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "existing_model_reused_without_retraining": true,
+  "strict_runtime_fit_tune_guards_passed": true,
+  "model_directory": "project/.build/linux-refit-check",
+  "model_file": "linux_fixed_component.cbm",
+  "runtime_selection_sha256": "d02901b4c486dccc174ca50ffbe799955bcd46c7eef6d80a8fa136c84a98f0fb",
+  "training_sha256": "68369be48d22ffe0fdcb7d2a18cc3b76dcd7dee65264fd2c088992d4d6e1d1ff",
+  "seconds": 0.8258996109998407
+}

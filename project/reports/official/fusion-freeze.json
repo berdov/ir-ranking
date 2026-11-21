@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+  "lexical_selection_sha256": "9332e17bf3c16b19f09d086e51d6bdcf452e779469b5a885d41812c5e177a942",
+  "split_sha256": "6c11833d7cec6c457a639027d24eb935c66ab67db217b8df925c2ebba4727d1f",
+  "tune_predictions_sha256": "15f0fa42011f80dee89304ba840f0c67c36dc6a9d91bdbd905b1fca8e9cfa6d5",
+  "feature_source_sha256": "475abe225ece803229ee8ef7252ef65df7161a332b2d7309f935e61e66fd1ea4",
+  "implementation_sha256": {
+    "ranking.py": "601ddd05fd05e5d0bd263bbce06e7a2f3720c5bc0e098cc58e59d62758896711",
+    "experiments.py": "ee2c28e37286e6490dda8e179715574dce16a6bc945658f8ab23858fd46893a0",
+    "fusion.py": "a6afaa711e1f36bf1b63dec01ad6edaf5d20723a8b9c8a905ec299e9de3ba263",
+    "neural.py": "5e62c804f7a95e3c6e64911935f0863235a983468b5ed07d299ec9d4052fa15a",
+    "pipeline.py": "6611b3e632343d980d9be2a3ebf2e38549cdcfb963fed92450501269e10a45a9"
+  },
+  "fusion_config_sha256": "4e26a774bc5709ac907fdba07b78f4a0bcc906b136965dd8721d697d91dae77f",
+  "fusion_report_sha256": "0d662d93fd8058432c1290990ee0257b3cd7cffa2b6f28e65e6ef046c9df4010",
+  "policy": "fixed on tune queries before any final holdout evaluation"
+}

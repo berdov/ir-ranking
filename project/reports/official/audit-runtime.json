@@ -1,0 +1,30 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "pipeline.py",
+    "audit",
+    "--data_dir",
+    "/Users/berdov/ir-ranking/data/project",
+    "--cache_dir",
+    "cache",
+    "--output_dir",
+    "reports/official",
+    "--model_dir",
+    "/Users/berdov/ir-ranking/models/mmarco-miniLM",
+    "--device",
+    "mps",
+    "--batch_size",
+    "32",
+    "--threads",
+    "4"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 601.8565731249982,
+  "sampled_process_tree_peak_rss_bytes": 2234253312,
+  "native_child_peak_rss_bytes": 2284781568,
+  "rss_excludes_separate_gpu_memory": true,
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.12.3"
+}

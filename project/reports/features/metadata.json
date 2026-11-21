@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "fingerprint": {
+    "schema_version": 1,
+    "files": {
+      "vkmarco-docs.tsv": {
+        "size": 16758392268,
+        "mtime_ns": 1795264459553969927,
+        "edge_sha256": "e6ccbee0d719104cf5327bedf60780877b693e3e09436b2f12f620b609adfc0b"
+      },
+      "vkmarco-doctrain-queries.tsv": {
+        "size": 1100076,
+        "sha256": "0d1f6cf068a2637185bdaac34e754645af357170e5343484b59c213dbb6532fc"
+      },
+      "vkmarco-doctrain-qrels.tsv": {
+        "size": 9596216,
+        "sha256": "fa842d046036f37cb699afb08c75d223e09315aa780be1918e42595f67ff2032"
+      },
+      "vkmarco-doceval-queries.tsv": {
+        "size": 150731,
+        "sha256": "f58bfd769ffc3ccb203737bd1fe63de0b732e5ec2f7e9bb3f3717fbbe6c09a1e"
+      },
+      "objects.csv": {
+        "size": 1504791,
+        "sha256": "9d60d274ff45ef17fcb6dfe9324ace9223ddb8e64f333ffa5f3ee3605856cefe"
+      },
+      "sample_submission.csv": {
+        "size": 998596,
+        "sha256": "f6edbcbb04d31519242c9e5d9c6361245ff7ea556545910fc48a80325529b627"
+      }
+    },
+    "source_sha256": {
+      "data.py": "d2dc0e4f6474a7f29a0cbb879d7665de861ef8cddbebcd54c3658d4f6c93b159",
+      "features.py": "1ea1971af7ba96edb6bd6c15efde65df7bc9f8477d02f6c63a4245d4fd46a469"
+    },
+    "stemmer_version": "3.1.0"
+  },
+  "documents": 1258656,
+  "candidate_documents": 513482,
+  "train_pairs": 460030,
+  "test_pairs": 63546,
+  "train_queries": 14543,
+  "test_queries": 2000,
+  "query_vocabulary_size": 24501,
+  "field_token_totals": {
+    "title": 11364857,
+    "body": 1181118096,
+    "url": 9272468
+  },
+  "field_average_lengths": {
+    "title": 9.029359094144866,
+    "body": 938.3962703073755,
+    "url": 7.366959677624386
+  },
+  "corpus_sha256": "4455c13557f8565d9c97fe31a17bee4cea6963c07b3623356398f307ff822826",
+  "corpus_prefix_sha256": null,
+  "feature_seconds": 1317.058,
+  "normalization": "Russian Snowball (PyStemmer), lower case, ё→е, remove combining stress, 2+ word tokens",
+  "labels_used_for_features": false
+}

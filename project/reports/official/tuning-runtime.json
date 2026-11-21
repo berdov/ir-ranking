@@ -1,0 +1,22 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "experiments.py",
+    "tune",
+    "--features",
+    "cache/features.npz",
+    "--output_dir",
+    "reports/official",
+    "--threads",
+    "4"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 269.05747158300073,
+  "sampled_process_tree_peak_rss_bytes": 2042658816,
+  "native_child_peak_rss_bytes": 2184478720,
+  "rss_excludes_separate_gpu_memory": true,
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.12.3"
+}
