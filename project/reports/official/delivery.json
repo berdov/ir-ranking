@@ -1,6 +1,7 @@
 {
   "submission": "/Users/berdov/Downloads/ir_project_submission.csv",
   "sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f",
-  "kaggle_submitted": false,
-  "public_score": null
+  "kaggle_submitted": true,
+  "public_score": 0.64204,
+  "kaggle_score_observed_date": "2026-11-24"
 }

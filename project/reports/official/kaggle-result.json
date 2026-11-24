@@ -1,0 +1,14 @@
+{
+  "competition": "search-project-vk-ir-hse-fall-2026",
+  "kaggle_username": "whuliss",
+  "submitter_display_name": "Игорь Бердов",
+  "submission_filename": "ir_project_submission.csv",
+  "local_submission_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f",
+  "public_score": 0.64204,
+  "private_score": null,
+  "baseline_public_score": 0.592,
+  "baseline_beaten": true,
+  "difference_to_baseline": 0.05004,
+  "observed_date": "2026-11-24",
+  "evidence": "User-provided screenshot of successful Kaggle submission in this conversation; not an API lookup"
+}

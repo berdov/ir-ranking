@@ -1,5 +1,5 @@
 {
-  "stage": "local_complete_ready_for_kaggle",
+  "stage": "kaggle_submitted_ready_for_lms",
   "submission_validated": true,
   "download_csv": "/Users/berdov/Downloads/ir_project_submission.csv",
   "submission_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f",
@@ -8,6 +8,9 @@
   "linux_portability_passed": true,
   "unit_tests_mac": 40,
   "unit_tests_linux": 40,
-  "awaiting_kaggle_public_score": true,
-  "lms_submission_confirmed": false
+  "awaiting_kaggle_public_score": false,
+  "lms_submission_confirmed": false,
+  "kaggle_submitted": true,
+  "public_score": 0.64204,
+  "kaggle_score_observed_date": "2026-11-24"
 }

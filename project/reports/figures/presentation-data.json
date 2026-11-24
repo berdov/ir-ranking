@@ -7746,7 +7746,20 @@
       "python": "3.12.3"
     }
   ],
-  "kaggle": null,
+  "kaggle": {
+    "competition": "search-project-vk-ir-hse-fall-2026",
+    "kaggle_username": "whuliss",
+    "submitter_display_name": "Игорь Бердов",
+    "submission_filename": "ir_project_submission.csv",
+    "local_submission_sha256": "bee099f6d3d48d0554bedb03bd3c8041191fc31072ab11c1263641f5aa2fdb5f",
+    "public_score": 0.64204,
+    "private_score": null,
+    "baseline_public_score": 0.592,
+    "baseline_beaten": true,
+    "difference_to_baseline": 0.05004,
+    "observed_date": "2026-11-24",
+    "evidence": "User-provided screenshot of successful Kaggle submission in this conversation; not an API lookup"
+  },
   "source_sha256": {
     "experiments.json": "2edee06daf376fb152f03f375c961b7e467dce60a1360c5d8ab74ed6c01e735c",
     "selection.json": "466b73ab76e2584bfe7b0f4b73bd9fb4e1f81a24f88fa9077d4e63e8b3fa3979",
@@ -7763,6 +7776,7 @@
     "reports/official/final-runtime.json": "03816030127239bdf49c4dd102d5e5ef522c52df768f75926e83a368befad1ed",
     "reports/official/neural-tune-runtime.json": "806aa3168d7ef2d8a29b0f3f4c48fee88ce55e767d127fe03fcc6bb0424ce8f1",
     "reports/official/tuning-runtime.json": "03d26526b15bd407545efdd28b59b74c722674eb385625ceadc3a0ceea907e49",
+    "kaggle-result.json": "252e85e75e3107101798e8105a5ef1d228397f352ea3a95aac557cbe46b063f6",
     "reports/official/query-cases.json": "5ffb7a2b157a713e7372693cb17afe84ff150ef6962fde9b07ad569685f231b4",
     "reports/linux-smoke.json": "292a5ed6f317440a2cc5a692cc64d0e767cb35f954dd4261ee4515c1447af46d",
     "reports/linux-full-feature-comparison.json": "8ee5836f05fc98c2636176cebac9154467ad5edadadec106c83a9e3ea92c80d8",

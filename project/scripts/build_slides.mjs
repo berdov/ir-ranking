@@ -143,13 +143,16 @@ if(SMOKE){
   text(s,d.tune_neural_pair_fraction>=1?'Одно окно может пропустить удалённый фрагмент. В финале нейросеть оценивает все пары; entropy gate не выбран.':'Одно окно может пропустить удалённый фрагмент. При смене распределения запросов бюджет entropy gate может измениться.',64,475,1152,115,24);
   text(s,'CPU по умолчанию; также поддерживаются Apple MPS и CUDA.',64,620,1152,40,18,false,COLOR.muted);
 
-  s=slide('Выводы',sourceNotes('Около 40 секунд. Подвести итог по независимому holdout и стоимости нейронного этапа. Не обещать место на private leaderboard. Kaggle-результат добавляется после реальной отправки файла.', ['reports/official/final-holdout.json','reports/official/fusion-selection.json']));
+  const kg=d.kaggle?.public_score ?? d.kaggle?.score;
+  const kaggleNotes=kg!=null
+    ? `Публичный Kaggle nDCG@10: ${fmt(kg,5)}. Публичный BM25F baseline: ${fmt(d.kaggle.baseline_public_score,3)}. Источник результата: скриншот успешного сабмишна от ${d.kaggle.observed_date}. Приватный результат пока неизвестен.`
+    : 'Kaggle-результат добавляется после реальной отправки файла.';
+  s=slide('Выводы',sourceNotes(`Около 40 секунд. Подвести итог по независимому holdout и стоимости нейронного этапа. ${kaggleNotes}`, ['reports/official/final-holdout.json','reports/official/fusion-selection.json',...(kg!=null?['reports/official/kaggle-result.json']:[])]));
   text(s,`nDCG@10 на holdout: ${fmt(d.holdout.selected_ndcg)}`,64,165,1152,65,30,true,COLOR.accent);
   const neuralDelta=d.holdout.vs_lexical.mean_difference;
   text(s,`Вклад выбранного нейронного этапа относительно LTR: ${neuralDelta>=0?'+':''}${fmt(neuralDelta)}.`,64,280,1152,100,25);
   const wins=d.holdout_win_tie_loss;
   text(s,`По сравнению с BM25F: улучшение на ${int(wins.win)} запросах, ухудшение на ${int(wins.loss)}, без изменения на ${int(wins.tie)}.`,64,420,1152,110,24);
-  const kg=d.kaggle?.public_score ?? d.kaggle?.score;
   text(s,kg!=null?`Публичный Kaggle nDCG@10: ${fmt(kg,5)}`:'Публичный результат Kaggle ещё не получен.',64,600,1152,55,22,false,COLOR.muted);
 }
 
